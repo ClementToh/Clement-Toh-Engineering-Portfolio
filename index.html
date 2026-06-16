@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Template</title>
+    <!-- Importing Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font import to match the Framer aesthetic */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-[#0A0A0A] text-white antialiased selection:bg-white selection:text-black">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-[#0A0A0A]/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <!-- Replace with your name -->
+            <a href="#" class="font-semibold text-lg tracking-tight">Portfolio</a>
+            <div class="flex gap-6 text-sm font-medium text-neutral-400">
+                <a href="#projects" class="hover:text-white transition-colors">Projects</a>
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero / About Section -->
+    <section id="about" class="max-w-4xl mx-auto px-6 pt-40 pb-20">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-tight mb-8">
+            Engineer focusing on robotic systems and semiconductors
+        </h1>
+        <p class="text-neutral-400 text-lg md:text-xl leading-relaxed mb-6">
+            Test Engineer in the Operations Rotational Development Program at Teradyne. Rotating through high volume manufacturing, supply base management, and new product Introduction.
+        </p>
+        <p class="text-neutral-400 text-lg md:text-xl leading-relaxed mb-10">
+            Washington University in St. Louis alumnus with a Bachelor of Science in Mechanical Engineering and a Minor in Robotics.
+        </p>
+        <div class="flex gap-4">
+            <a href="#" class="px-6 py-3 bg-white text-black text-sm font-medium rounded-full hover:bg-neutral-200 transition-colors">LinkedIn</a>
+            <a href="#" class="px-6 py-3 bg-neutral-800 text-white text-sm font-medium rounded-full hover:bg-neutral-700 transition-colors border border-white/10">Resume</a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-12">
+        <div class="flex items-center justify-center mb-12">
+            <p class="text-neutral-400 text-sm">Click project photos below to learn more!</p>
+        </div>
+        
+        <!-- Project Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Project 1 -->
+            <a href="#" class="group block">
+                <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-neutral-900 mb-4">
+                    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=800" alt="Universal Robotic End Effector Design" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <div class="flex justify-between items-start gap-4">
+                    <h3 class="text-lg font-medium text-white">Universal Robotic End Effector Design</h3>
+                    <span class="text-neutral-400 text-sm mt-1">2025</span>
+                </div>
+            </a>
+
+            <!-- Project 2 -->
+            <a href="#" class="group block">
+                <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-neutral-900 mb-4">
+                    <img src="https://images.unsplash.com/photo-1518314916381-77a37c2a49ae?auto=format&fit=crop&q=80&w=800" alt="Light Pole PhotoBot" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <div class="flex justify-between items-start gap-4">
+                    <h3 class="text-lg font-medium text-white">Light Pole PhotoBot</h3>
+                    <span class="text-neutral-400 text-sm mt-1">2024</span>
+                </div>
+            </a>
+
+            <!-- Project 3 -->
+            <a href="#" class="group block">
+                <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-neutral-900 mb-4">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=800" alt="Robot Mini-Golf Striker" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <div class="flex justify-between items-start gap-4">
+                    <h3 class="text-lg font-medium text-white">Robot Mini-Golf Striker</h3>
+                    <span class="text-neutral-400 text-sm mt-1">2024</span>
+                </div>
+            </a>
+
+            <!-- Project 4 -->
+            <a href="#" class="group block">
+                <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-neutral-900 mb-4">
+                    <img src="https://images.unsplash.com/photo-1559297434-fae8a1916a79?auto=format&fit=crop&q=80&w=800" alt="WashU Design/Build/Fly Co-President" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <div class="flex justify-between items-start gap-4">
+                    <h3 class="text-lg font-medium text-white">WashU Design/Build/Fly Co-President</h3>
+                    <span class="text-neutral-400 text-sm mt-1">2024-2025</span>
+                </div>
+            </a>
+
+            <!-- Project 5 -->
+            <a href="#" class="group block">
+                <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-neutral-900 mb-4">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800" alt="RC Plane Mount for CFD Validation" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <div class="flex justify-between items-start gap-4">
+                    <h3 class="text-lg font-medium text-white">RC Plane Mount for CFD Validation</h3>
+                    <span class="text-neutral-400 text-sm mt-1">2024</span>
+                </div>
+            </a>
+
+            <!-- Project 6 -->
+            <a href="#" class="group block">
+                <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-neutral-900 mb-4">
+                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=800" alt="WashU Design/Build/Fly Propulsion Engineer" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <div class="flex justify-between items-start gap-4">
+                    <h3 class="text-lg font-medium text-white">WashU Design/Build/Fly Propulsion Engineer</h3>
+                    <span class="text-neutral-400 text-sm mt-1">2021-2024</span>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Footer / Contact Section -->
+    <footer id="contact" class="border-t border-white/10 mt-12 bg-[#0A0A0A]">
+        <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-neutral-500">
+            <p>© Your Name - 2026</p>
+            <div class="flex gap-6">
+                <a href="#projects" class="hover:text-white transition-colors">Projects</a>
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="mailto:your.email@example.com" class="hover:text-white transition-colors">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
