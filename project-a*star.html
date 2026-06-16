@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIoT Integration | Clement.Builds</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-neutral-900 antialiased selection:bg-black selection:text-white">
+
+    <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-neutral-200">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="index.html" class="font-semibold text-lg tracking-tight text-neutral-900 hover:opacity-70 transition-opacity">Clement.Builds</a>
+            <div class="flex gap-6 text-sm font-medium text-neutral-500">
+                <!-- This links back to your homepage -->
+                <a href="index.html#projects" class="hover:text-neutral-900 transition-colors">← Back to Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Header & Metadata -->
+    <header class="max-w-4xl mx-auto px-6 pt-40 pb-12">
+        <h1 class="text-4xl md:text-5xl font-semibold tracking-tight leading-tight mb-8 text-neutral-900">
+            Industrial IoT Integration for EOS M 290 LPBF 3D Printing
+        </h1>
+        
+        <div class="flex flex-wrap gap-x-12 gap-y-6 py-6 border-t border-b border-neutral-200 text-sm">
+            <div>
+                <p class="text-neutral-400 font-medium mb-1">Role</p>
+                <p class="text-neutral-900 font-medium">Research Intern</p>
+            </div>
+            <div>
+                <p class="text-neutral-400 font-medium mb-1">Organization</p>
+                <p class="text-neutral-900 font-medium">A*STAR</p>
+            </div>
+            <div>
+                <p class="text-neutral-400 font-medium mb-1">Year</p>
+                <p class="text-neutral-900 font-medium">2023</p>
+            </div>
+            <div>
+                <p class="text-neutral-400 font-medium mb-1">Tech Stack</p>
+                <p class="text-neutral-900 font-medium">Python, InfluxDB, Grafana, NI DAQ</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Hero Image -->
+    <section class="max-w-6xl mx-auto px-6 pb-16">
+        <div class="w-full aspect-video md:aspect-[21/9] rounded-2xl overflow-hidden bg-neutral-100">
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1600" alt="Industrial Metal 3D Printer" class="w-full h-full object-cover">
+        </div>
+    </section>
+
+    <!-- Project Body Content -->
+    <article class="max-w-3xl mx-auto px-6 pb-24 space-y-12 text-lg text-neutral-600 leading-relaxed">
+        
+        <div>
+            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Project Overview</h2>
+            <p class="mb-4">
+                During my time at the Advanced Remanufacturing and Technology Centre (A*STAR), I spearheaded an industry-linked additive manufacturing project to bring remote monitoring capabilities to industrial 3D printing. The core objective was to successfully integrate an M5Stack FIRE Industrial IoT device with a commercial EOS M 290 Laser Powder Bed Fusion (LPBF) metal 3D printer.
+            </p>
+        </div>
+
+        <div>
+            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Custom Sensor Instrumentation</h2>
+            <p class="mb-6">
+                To achieve real-time telemetry, I engineered a custom sensor instrumentation system. This involved modifying the industrial hardware to safely route 12 separate signal channels from two strain gauges and an NI-9236 DAQ module through custom-machined 13 mm ports.
+            </p>
+            
+            <div class="w-full aspect-[4/3] rounded-xl overflow-hidden bg-neutral-100 my-8">
+                 <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=1200" alt="Sensor Instrumentation Routing" class="w-full h-full object-cover">
+            </div>
+        </div>
+
+        <div>
+            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Data Pipeline & Results</h2>
+            <p class="mb-4">
+                Beyond the physical hardware, I built an end-to-end industrial data pipeline via InfluxDB and Grafana to simultaneously analyze five critical process parameters during live prints.
+            </p>
+            <p>
+                Through rigorous LPBF validation experiments, the telemetry system successfully identified micro-level powder bed deviations of just <strong>~50 µm</strong> and maintained oxygen levels below <strong>0.1%</strong>.
+            </p>
+        </div>
+
+    </article>
+
+    <footer id="contact" class="border-t border-neutral-200 bg-white">
+        <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-neutral-500">
+            <p>© Clement TOH - 2026</p>
+            <div class="flex gap-6">
+                <a href="mailto:clement.toh2604@gmail.com" class="hover:text-neutral-900 transition-colors">Contact Me</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
