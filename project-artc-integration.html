@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>End-to-End IIoT Integration | Clement.Builds</title>
+
+    <link rel="icon" type="image/png" href="images/CT32x32.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body id="top" class="bg-white text-neutral-900 antialiased selection:bg-black selection:text-white">
+
+    <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-neutral-200">
+        <div class="max-w-6xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
+            <a href="index.html#top" class="font-semibold text-base md:text-lg tracking-tight text-neutral-900 shrink-0 hover:opacity-70 transition-opacity">Clement.Builds</a>
+            <div class="flex items-center gap-3 md:gap-6 text-xs md:text-sm font-medium text-neutral-500">
+                <a href="index.html#projects" class="hover:text-neutral-900 transition-colors">← Back to Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="max-w-4xl mx-auto px-6 pt-40 pb-12">
+        <h1 class="text-4xl md:text-5xl font-semibold tracking-tight leading-tight mb-8 text-neutral-900">
+            End-to-End IIoT Integration for LPBF 3D Printing
+        </h1>
+        
+        <div class="flex flex-wrap gap-x-12 gap-y-6 py-6 border-t border-b border-neutral-200 text-sm">
+            <div>
+                <p class="text-neutral-400 font-medium mb-1">Role</p>
+                <p class="text-neutral-900 font-medium">Engineering Intern</p>
+            </div>
+            <div>
+                <p class="text-neutral-400 font-medium mb-1">Organisation</p>
+                <p class="text-neutral-900 font-medium">
+                    <a href="https://www.a-star.edu.sg/artc" target="_blank" rel="noopener noreferrer" class="hover:underline hover:text-neutral-600 transition-colors">
+                        A*STAR (ARTC)
+                    </a>
+                </p>
+            </div>
+            <div>
+                <p class="text-neutral-400 font-medium mb-1">Period</p>
+                <p class="text-neutral-900 font-medium">Sep 2022 – Apr 2023</p>
+            </div>
+            <div>
+                <p class="text-neutral-400 font-medium mb-1">Tech Stack</p>
+                <p class="text-neutral-900 font-medium">C++, Python, M5Stack FIRE, NI DAQ, InfluxDB, Grafana</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="max-w-6xl mx-auto px-6 pb-16">
+        <div class="w-full aspect-video md:aspect-[21/9] rounded-2xl overflow-hidden bg-neutral-100 border border-neutral-200">
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1600" alt="Industrial Metal 3D Printer and Data Pipeline" class="w-full h-full object-cover">
+        </div>
+    </section>
+
+    <article class="max-w-3xl mx-auto px-6 pb-24 space-y-12 text-lg text-neutral-600 leading-relaxed">
+        
+        <div>
+            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">The Challenge</h2>
+            <p class="mb-4">
+                A major hurdle in Industrial Additive Manufacturing is the lack of real-time feedback during the fabrication process. Because complex metal parts take long periods to construct using Laser Powder Bed Fusion (LPBF), hidden flaws or excessive residual stresses can result in unusable parts and wasted machine life. 
+            </p>
+        </div>
+
+        <div>
+            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Phase 1: Hardware Instrumentation</h2>
+            <p class="mb-4">
+                To achieve real-time telemetry, I engineered a custom sensor instrumentation system directly onto a commercial EOS M 290 3D printer. 
+            </p>
+            <ul class="list-disc pl-6 space-y-2 mb-6">
+                <li>Modified the industrial hardware to safely route 12 separate signal channels from two strain gauges and an NI-9236 DAQ module through custom-machined 13 mm ports.</li>
+                <li>Designed and 3D printed secure PCB holders using Siemens NX to organize internal wiring.</li>
+                <li>Implemented a 200mA fast-acting fuse on the +5V power supply to completely eliminate the risk of sparks within the powder chamber.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Phase 2: Edge Computing</h2>
+            <p class="mb-4">
+                With the hardware safely routing data, I integrated an M5Stack FIRE Industrial IoT device using C++ firmware developed in the Platform.io IDE.
+            </p>
+            <ul class="list-disc pl-6 space-y-2 mb-6">
+                <li>Programmed the edge device to parse incoming live machine states directly from the printer.</li>
+                <li>Triggered immediate visual alerts—using the device's built-in LED pixels—to notify operators of errors (like sudden chamber door openings) without needing to be physically at the machine.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Phase 3: The Data Pipeline</h2>
+            <p class="mb-4">
+                Beyond edge alerts, the hardware data needed to be logged for deep process optimization. I built an end-to-end industrial data pipeline that funneled high-frequency sensor data into a time-series database.
+            </p>
+            <ul class="list-disc pl-6 space-y-2 mb-6">
+                <li>Deployed InfluxDB to continuously ingest the sensor telemetry.</li>
+                <li>Developed interactive Grafana dashboards to simultaneously track and analyze 5 critical process parameters during live prints.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">The Impact</h2>
+            <p class="mb-4">
+                The integrated system provided unprecedented visibility into the LPBF process. Through rigorous validation experiments, the telemetry system successfully identified micro-level powder bed surface deviations of just ~50 µm. Furthermore, it reliably verified that chamber oxygen levels were maintained strictly below 0.1% under controlled conditions, ensuring optimal print quality.
+            </p>
+        </div>
+
+    </article>
+
+    <footer id="contact" class="border-t border-neutral-200 bg-white">
+        <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-neutral-500">
+            <p>© Clement TOH - 2026</p>
+            <div class="flex items-center gap-6">
+                <a href="mailto:clement.toh2604@gmail.com" class="hover:text-neutral-900 transition-colors">Contact Me</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
