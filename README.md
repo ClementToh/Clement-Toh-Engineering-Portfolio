@@ -15,7 +15,7 @@ My engineering focus lies at the intersection of hardware systems and real-time 
 * **Email:** [clement.toh2604@gmail.com](mailto:clement.toh2604@gmail.com)
 * **LinkedIn:** [linkedin.com/in/clement26](https://www.linkedin.com/in/clement26)
 
-### Core Competencies:
+## 🎯 Core Competencies:
 * **CAD & Design:** Autodesk Inventor, Fusion 360, Creo, Siemens NX, AutoCAD
 * **Programming & Data:** Python, C++, Arduino, MATLAB, Grafana, InfluxDB
 * **Manufacturing:** Additive Manufacturing (LPBF/FDM), Machining, Prototyping
