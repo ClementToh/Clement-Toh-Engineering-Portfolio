@@ -13,29 +13,22 @@
         body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
-<!-- Added id="top" to the body -->
 <body id="top" class="bg-white text-neutral-900 antialiased selection:bg-black selection:text-white">
 
     <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-neutral-200">
         <div class="max-w-6xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
-            
-            <!-- Changed href from "index.html" to "#top" for smooth scrolling -->
             <a href="#top" class="font-semibold text-base md:text-lg tracking-tight text-neutral-900 shrink-0">Clement.Builds</a>
-            
             <div class="flex items-center gap-3 md:gap-6 text-xs md:text-sm font-medium text-neutral-500">
-                <!-- Changed href from "index.html#projects" to "#projects" -->
                 <a href="#projects" class="hover:text-neutral-900 transition-colors">Projects</a>
                 <a href="about.html" class="hover:text-neutral-900 transition-colors">About</a>
-                
                 <a href="mailto:clement.toh2604@gmail.com" class="px-4 py-1.5 md:px-5 md:py-2 bg-neutral-900 text-white rounded-full hover:bg-neutral-800 transition-colors shrink-0">Contact</a>
             </div>
-            
         </div>
     </nav>
 
     <section id="about" class="max-w-4xl mx-auto px-6 pt-40 pb-20">
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight leading-tight mb-8 text-neutral-900">
-            <strong>Mechanical Engineer</strong> bridging hardware systems and real-time data pipelines
+            <strong>Mechanical Engineer</strong> bridging hardware systems & real-time data pipelines
         </h1>
         <p class="text-neutral-600 text-lg md:text-xl leading-relaxed mb-6">
             Specializing in mechatronics, advanced manufacturing, and IIoT integration. 
@@ -58,10 +51,11 @@
             <p class="text-neutral-500 text-sm">Click project photos below to learn more!</p>
         </div>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <a href="project-jd-union.html" class="group block">
+        <div class="flex flex-wrap justify-center gap-8">
+            
+            <a href="project-jd-union.html" class="group block w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-sm">
                 <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-neutral-100 mb-4">
-                    <img src="https://images.unsplash.com/photo-1518314916381-77a37c2a49ae?auto=format&fit=crop&q=80&w=800" alt="Laser Motion & Vision Control Integration" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-100">
+                    <img src="https://images.unsplash.com/photo-1518314916381-77a37c2a49ae?auto=format&fit=crop&q=80&w=800" alt="Advanced Motion & Vision Control" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-100">
                 </div>
                 <div class="flex justify-between items-start gap-4">
                     <h3 class="text-lg font-medium text-neutral-900">Laser Motion & Vision Control Systems</h3>
@@ -69,39 +63,19 @@
                 </div>
             </a>
 
-             <a href="project-artc-integration.html" class="group block">
+            <a href="project-artc-integration.html" class="group block w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-sm">
                 <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-neutral-100 mb-4">
-                    <img src="https://images.unsplash.com/photo-1559297434-fae8a1916a79?auto=format&fit=crop&q=80&w=800" alt="Real-Time Telemetry with InfluxDB & Grafana" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-100">
+                    <img src="https://images.unsplash.com/photo-1559297434-fae8a1916a79?auto=format&fit=crop&q=80&w=800" alt="End-to-End IIoT Integration" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-100">
                 </div>
                 <div class="flex justify-between items-start gap-4">
                     <h3 class="text-lg font-medium text-neutral-900">End-to-End IIoT Integration for LPBF 3D Printing</h3>
                     <span class="text-neutral-500 text-sm mt-1">2023</span>
                 </div>
             </a>
-            
-           <!--  <a href="project-a*star.html" class="group block">
-                <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-neutral-100 mb-4">
-                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800" alt="Industrial IoT Integration for LPBF 3D Printing" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-100">
-                </div>
-                <div class="flex justify-between items-start gap-4">
-                    <h3 class="text-lg font-medium text-neutral-900">IIoT Integration for EOS M 290 LPBF</h3>
-                    <span class="text-neutral-500 text-sm mt-1">2023</span>
-                </div>
-            </a>
 
-            <a href="project-m5stack.html" class="group block">
+            <a href="project-daq.html" class="group block w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-sm">
                 <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-neutral-100 mb-4">
-                    <img src="https://images.unsplash.com/photo-1559297434-fae8a1916a79?auto=format&fit=crop&q=80&w=800" alt="Real-Time Telemetry with InfluxDB & Grafana" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-100">
-                </div>
-                <div class="flex justify-between items-start gap-4">
-                    <h3 class="text-lg font-medium text-neutral-900">M5Stack IIoT & Telemetry Pipeline</h3>
-                    <span class="text-neutral-500 text-sm mt-1">2023</span>
-                </div>
-            </a>-->
-
-            <a href="project-daq.html" class="group block">
-                <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-neutral-100 mb-4">
-                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=800" alt="Custom Sensor Instrumentation System" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-100">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=800" alt="NI DAQ Instrumentation" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-100">
                 </div>
                 <div class="flex justify-between items-start gap-4">
                     <h3 class="text-lg font-medium text-neutral-900">13mm Sensor Port & NI DAQ Instrumentation</h3>
@@ -109,19 +83,19 @@
                 </div>
             </a>
 
-            <a href="project-wiretapping.html" class="group block">
+            <a href="project-wiretapping.html" class="group block w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-sm">
                 <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-neutral-100 mb-4">
-                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=800" alt="3D Printed Museum Box Mechanism" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-100">
+                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=800" alt="IPC Wiretapping" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-100">
                 </div>
                 <div class="flex justify-between items-start gap-4">
                     <h3 class="text-lg font-medium text-neutral-900">IPC Protocol Wiretapping & Packet Analysis</h3>
                     <span class="text-neutral-500 text-sm mt-1">2023</span>
                 </div>
             </a>
-            
-            <a href="#" class="group block">
+
+            <a href="#" class="group block w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-sm">
                 <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-neutral-100 mb-4">
-                    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=800" alt="Anthropomorphic Knee Exoskeleton" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-100">
+                    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=800" alt="Exoskeleton" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-100">
                 </div>
                 <div class="flex justify-between items-start gap-4">
                     <h3 class="text-lg font-medium text-neutral-900">Anthropomorphic Knee Exoskeleton</h3>
@@ -135,9 +109,7 @@
     <footer id="contact" class="border-t border-neutral-200 mt-12 bg-white">
         <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-neutral-500">
             <p>© Clement TOH - 2026</p>
-            <!-- Added items-center here for perfect vertical alignment -->
             <div class="flex items-center gap-6">
-                <!-- Kept as #projects -->
                 <a href="#projects" class="hover:text-neutral-900 transition-colors">Projects</a>
                 <a href="about.html" class="hover:text-neutral-900 transition-colors">About</a>
                 <a href="mailto:clement.toh2604@gmail.com" class="hover:text-neutral-900 transition-colors">Contact</a>
