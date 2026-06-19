@@ -33,9 +33,12 @@
         <!-- Top Section: Centered Profile -->
         <div class="flex flex-col items-center text-center max-w-2xl mx-auto">
             
-            <!-- Profile Image (Replace src with your actual photo) -->
-            <div class="w-48 h-48 md:w-56 md:h-56 mb-8 relative">
-                <img src="images/profilephoto.jpg" alt="Clement Toh" class="w-full h-full object-cover rounded-full border border-neutral-200 shadow-sm p-1">
+            <!-- Updated Profile Image Wrapper -->
+            <div class="w-48 h-48 md:w-56 md:h-56 mb-8 relative bg-white rounded-full border border-neutral-200 shadow-sm p-1">
+                <!-- Inner container to hide zoomed edges -->
+                <div class="w-full h-full rounded-full overflow-hidden relative">
+                    <img src="images/profilephoto.jpg" alt="Clement Toh" class="w-full h-full object-cover object-[center_15%] scale-[1.35]">
+                </div>
             </div>
 
             <!-- Name -->
