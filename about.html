@@ -15,6 +15,7 @@
 </head>
 <body class="bg-white text-neutral-900 antialiased">
 
+    <!-- Navigation -->
     <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-neutral-200">
         <div class="max-w-6xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
             <a href="index.html" class="font-semibold text-base md:text-lg tracking-tight text-neutral-900 shrink-0">Clement.Builds</a>
@@ -26,11 +27,22 @@
         </div>
     </nav>
 
-    <main id="top" class="max-w-4xl mx-auto px-6 pt-40 pb-24">
-        <h1 class="text-5xl font-semibold mb-12">About Me</h1>
+    <!-- Main Content -->
+    <main id="top" class="max-w-4xl mx-auto px-6 pt-32 pb-24">
         
-        <div class="grid md:grid-cols-3 gap-12">
-            <div class="md:col-span-2 space-y-6 text-neutral-600 leading-relaxed">
+        <!-- Top Section: Centered Profile -->
+        <div class="flex flex-col items-center text-center max-w-2xl mx-auto">
+            
+            <!-- Profile Image (Replace src with your actual photo) -->
+            <div class="w-48 h-48 md:w-56 md:h-56 mb-8 relative">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800" alt="Clement Toh" class="w-full h-full object-cover rounded-full border border-neutral-200 shadow-sm p-1">
+            </div>
+
+            <!-- Name -->
+            <h1 class="text-4xl md:text-5xl font-semibold mb-6 text-neutral-900">Clement Toh</h1>
+            
+            <!-- Bio Description -->
+            <div class="space-y-6 text-neutral-600 leading-relaxed">
                 <p>
                     I am a Mechanical Engineering undergraduate at the National University of Singapore (NUS), specializing in the intersection of high-precision hardware and real-time industrial data.
                 </p>
@@ -42,18 +54,21 @@
                 </p>
             </div>
 
-            <div class="space-y-8 text-sm">
-                <div class="flex flex-col gap-2">
-                    <h3 class="text-lg font-bold text-neutral-900 mb-1">Connect</h3>
-                    <a href="mailto:clement.toh2604@gmail.com" class="text-neutral-500 hover:text-neutral-900 hover:underline transition-colors w-fit">clement.toh2604@gmail.com</a>
-                    <p class="text-neutral-500">+65 8866 3912</p>
-                    <a href="https://www.linkedin.com/in/clement26" target="_blank" rel="noopener noreferrer" class="text-neutral-900 underline hover:text-neutral-600 transition-colors w-fit">LinkedIn</a>
-                </div>
+            <!-- Block Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 mt-10">
+                <a href="https://www.linkedin.com/in/clement26" target="_blank" rel="noopener noreferrer" class="px-6 py-2.5 bg-[#222222] text-white text-sm font-medium rounded-lg hover:bg-black transition-colors">
+                    LinkedIn
+                </a>
+                <a href="https://drive.google.com/file/d/1_CNmMqEC4s-UprxD9iBVxwGBlGlT71ef/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="px-6 py-2.5 bg-[#222222] text-white text-sm font-medium rounded-lg hover:bg-black transition-colors">
+                    Resume
+                </a>
             </div>
+
         </div>
 
+        <!-- Skills Section -->
         <div class="mt-20 pt-12 border-t border-neutral-200">
-            <h2 class="text-2xl font-semibold mb-8">Technical Expertise</h2>
+            <h2 class="text-2xl font-semibold mb-8 text-neutral-900">Technical Expertise</h2>
             <div class="grid md:grid-cols-2 gap-8 text-sm">
                 <div>
                     <h4 class="font-semibold text-neutral-900 mb-2">CAD & Design</h4>
@@ -74,30 +89,32 @@
             </div>
         </div>
 
+        <!-- Honors & Awards Section -->
         <div class="mt-20 pt-12 border-t border-neutral-200">
-            <h2 class="text-2xl font-semibold mb-8">Honors & Awards</h2>
+            <h2 class="text-2xl font-semibold mb-8 text-neutral-900">Honors & Awards</h2>
             <div class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-2 py-4 border-b border-neutral-100 last:border-0">
                 <div class="max-w-xl">
                     <h4 class="text-base font-semibold text-neutral-900">School of Mechanical & Aeronautical Engineering Book Prize AY2020/2021</h4>
                     <p class="text-sm text-neutral-500 mt-1">Singapore Polytechnic</p>
                     <p class="text-sm text-neutral-600 mt-2 leading-relaxed">Top in Cohort for Module - Communicating For Personal And Team Effectiveness.</p>
-                    <a href="YOUR_GDRIVE_LINK_HERE" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 px-4 py-2 bg-neutral-900 text-white text-sm font-medium rounded-lg hover:bg-neutral-800 transition-colors">
+                    <a href="YOUR_GDRIVE_LINK_HERE" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 px-4 py-2 bg-[#222222] text-white text-sm font-medium rounded-lg hover:bg-black transition-colors">
                         View Certificate PDF
                     </a>   
                 </div>
-                <div class="text-sm text-neutral-400 shrink-0 md:text-right">
+                <div class="text-sm text-neutral-400 shrink-0 md:text-right mt-2 md:mt-0">
                     Oct 2021
                 </div>
             </div>
         </div>
 
+        <!-- Licenses & Certifications Section -->
         <div class="mt-16 pt-12 border-t border-neutral-200">
-            <h2 class="text-2xl font-semibold mb-8">Licenses & Certifications</h2>
+            <h2 class="text-2xl font-semibold mb-8 text-neutral-900">Licenses & Certifications</h2>
             <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4 py-4 border-b border-neutral-100 last:border-0">
                 <div class="max-w-xl">
                     <h4 class="text-base font-semibold text-neutral-900">Build Your Own Internet of Things Certification</h4>
                     <p class="text-sm text-neutral-500 mt-1">Singapore Polytechnic</p>
-                    <a href="YOUR_GDRIVE_LINK_HERE" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 px-4 py-2 bg-neutral-900 text-white text-sm font-medium rounded-lg hover:bg-neutral-800 transition-colors">
+                    <a href="YOUR_GDRIVE_LINK_HERE" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 px-4 py-2 bg-[#222222] text-white text-sm font-medium rounded-lg hover:bg-black transition-colors">
                         View Certificate PDF
                     </a>
                 </div>
@@ -108,6 +125,7 @@
         </div>
     </main>
 
+    <!-- Footer -->
     <footer id="contact" class="border-t border-neutral-200 mt-12 bg-white">
         <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-neutral-500">
             <p>© Clement TOH - 2026</p>
