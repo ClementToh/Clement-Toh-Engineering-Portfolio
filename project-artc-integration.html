@@ -140,12 +140,33 @@
             <p class="mb-4">
                 Beyond edge alerts, the hardware data needed to be logged for deep process optimization. I built an end-to-end industrial data pipeline that funneled high-frequency sensor data into a time-series database.
             </p>
-            <ul class="list-disc pl-6 space-y-2 mb-6">
+            <ul class="list-disc pl-6 space-y-2 mb-8">
                 <li>Deployed InfluxDB to continuously ingest the sensor telemetry.</li>
                 <li>Developed interactive Grafana dashboards to simultaneously track and analyze 5 critical process parameters during live prints.</li>
             </ul>
-        </div>
 
+            <!-- Phase 3 Image Gallery -->
+            <div class="flex flex-col gap-6 mb-12">
+                
+                <!-- Image 1: Grafana/Dashboard from Slide 40 -->
+                <div class="rounded-xl overflow-hidden bg-neutral-100 border border-neutral-200 flex flex-col">
+                    <img src="images/grafana-dashboard-slide40.png" alt="Telemetry dashboard tracking recoater blade status, position, and speed" class="w-full h-auto block">
+                    <div class="p-4 bg-white border-t border-neutral-200">
+                        <p class="text-xs text-neutral-500 leading-relaxed">Data Visualization: Real-time dashboard tracking the recoater blade's status, position, and speed during the LPBF process.</p>
+                    </div>
+                </div>
+                
+                <!-- Image 2: InfluxDB Data Explorer -->
+                <div class="rounded-xl overflow-hidden bg-neutral-100 border border-neutral-200 flex flex-col">
+                    <img src="images/3. Flux builder in the bottom panel to create a Flux query.png" alt="InfluxDB Flux query builder interface" class="w-full h-auto block">
+                    <div class="p-4 bg-white border-t border-neutral-200">
+                        <p class="text-xs text-neutral-500 leading-relaxed">Database Management: Utilizing the InfluxDB Flux builder to structure and filter high-frequency sensor data for dashboard ingestion.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
         <div>
             <h2 class="text-2xl font-semibold text-neutral-900 mb-4">The Impact</h2>
             <p class="mb-4">
