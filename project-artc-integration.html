@@ -76,14 +76,14 @@
         </div>
 
         <div>
-            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Phase 1: Hardware Instrumentation</h2>
+            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Phase 1: Mechanical Design & Sensor Instrumentation</h2>
             <p class="mb-4">
-                To achieve real-time telemetry, I engineered a custom sensor instrumentation system directly onto a commercial EOS M 290 3D printer.
+                To improve the sustainability of LPBF printing, early detection of layering faults is essential. I engineered a custom sensor instrumentation system directly onto a commercial EOS M 290 3D printer, utilizing a non-intrusive approach that avoided permanently modifying the machine chassis.
             </p>
             <ul class="list-disc pl-6 space-y-2 mb-8">
-                <li>Modified the industrial hardware to safely route 12 separate signal channels from two strain gauges and an NI-9236 DAQ module through custom-machined 13 mm ports.</li>
-                <li>Designed and 3D printed secure PCB holders using Siemens NX to organize internal wiring.</li>
-                <li>Implemented a 200mA fast-acting fuse on the +5V power supply to completely eliminate the risk of sparks within the powder chamber.</li>
+                <li><strong>Sensor Integration:</strong> Integrated three Rosette strain gauges to measure part warpage and mounted a Kistler 8152C Acoustic Emission sensor (100KHz - 900 kHz) to detect high-frequency stress waves from part delamination.</li>
+                <li><strong>Signal Routing:</strong> Safely routed 12 distinct signal wires from the internal sensors to an external NI-9236 Data Acquisition (DAQ) module through custom-machined 13mm ports.</li>
+                <li><strong>Safety & Design:</strong> Designed and 3D printed secure PCB holders using Siemens NX. Implemented a 200mA fast-acting fuse to eliminate spark risks, and rigorously verified the chamber maintained its critical <0.1% oxygen concentration.</li>
             </ul>
 
             <div class="flex flex-col gap-6 mb-12">
