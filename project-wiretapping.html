@@ -69,19 +69,22 @@
     <article class="max-w-3xl mx-auto px-6 pb-24 space-y-12 text-lg text-neutral-600 leading-relaxed">
         
         <div>
-            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">The Challenge</h2>
+            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">The Challenge: In-Situ Spectroscopy</h2>
             <p class="mb-4">
-                To evaluate the elemental composition of metal powder during a print, we needed to integrate an optical spectrometer to capture plasma emissions excited by the printer's laser. However, the spectrometer must only collect data when the building platform and recoater blade are stationary. Because commercial 3D printers are closed systems, we had to reverse-engineer the machine's internal states to synchronize our external sensors.
+                To evaluate the elemental composition of metal powder during a live print, we needed to integrate a Compact Spectrometer-Firefly4000 to capture plasma emissions excited by the printer's laser. 
+            </p>
+            <p class="mb-4">
+                However, the spectrometer must only collect data when the building platform and recoater blade are completely stationary to ensure accurate readings. Because commercial 3D printers are closed "black-box" systems, we had no direct way to know when the blade stopped moving. We had to reverse-engineer the machine's internal communication states to synchronize our external sensors.
             </p>
         </div>
 
         <div>
             <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Network Wiretapping & Data Capture</h2>
             <p class="mb-4">
-                Working alongside senior engineers, we achieved this by hardware tapping the machine's Industrial PC (IPC) to eavesdrop on the internal Ethernet Powerlink (EPL) V2 network communications. 
+                Working alongside senior engineers, we bypassed the software restrictions by hardware tapping the machine's Industrial PC (IPC) to eavesdrop on the internal Ethernet Powerlink (EPL) V2 network communications. 
             </p>
             <ul class="list-disc pl-6 space-y-2 mb-6">
-                <li>Utilized <strong>Wireshark</strong> to capture and filter network traffic between the IPC and internal components (servomotors, stepper motors).</li>
+                <li>Utilized <strong>Wireshark</strong> to capture and filter network traffic between the managing IPC and internal controlled components (servomotors, stepper motors).</li>
                 <li>Monitored a live titanium print job over 30.6 hours, capturing 337 files containing over 168 million individual network packets.</li>
             </ul>
         </div>
@@ -89,25 +92,42 @@
         <div>
             <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Python Data Pipeline & Optimization</h2>
             <p class="mb-4">
-                With the raw network traffic captured, the next step was parsing the hex strings into usable integer formats and plotting them over time to find visual patterns corresponding to physical machine movements.
+                With the raw network traffic captured, I built a data pipeline to parse the hex strings into usable integer formats and plot them over time to uncover visual patterns corresponding to physical machine movements.
             </p>
-            <ul class="list-disc pl-6 space-y-2 mb-6">
-                <li>Developed Python scripts utilizing <strong>Pandas</strong> and <strong>Matplotlib</strong> to generate 3x4 grid graphs of different packet nodes against print time.</li>
-                <li>Optimized data processing loads by testing different sample sizes. I determined that down-sampling to alternate rows (8,279 rows) provided the perfect balance—saving significant processing power while maintaining the distinct saw-tooth fidelity of the graphs.</li>
+            <ul class="list-disc pl-6 space-y-2 mb-8">
+                <li>Developed Python scripts utilizing <strong>Pandas</strong> and <strong>Matplotlib</strong> to iteratively generate 3x4 grid graphs of 12 different packet nodes plotted against print time.</li>
+                <li>Optimized memory and processing loads by utilizing the <code>iloc[::2]</code> function to down-sample the massive dataset to alternate rows (8,279 rows). This provided the perfect balance—saving significant processing power while maintaining the distinct saw-tooth fidelity of the movement graphs.</li>
             </ul>
+
+            <div class="flex flex-col gap-6 mb-8">
+                <div class="rounded-xl overflow-hidden bg-neutral-100 border border-neutral-200 flex flex-col">
+                    <img src="images/python-matplotlib-script.png" alt="Python script using Pandas and Matplotlib" class="w-full h-auto block">
+                    <div class="p-4 bg-white border-t border-neutral-200">
+                        <p class="text-xs text-neutral-500 leading-relaxed">Data Pipeline: Python script utilizing Matplotlib subplots to map 12 extracted packet nodes against epoch time.</p>
+                    </div>
+                </div>
+                
+                <div class="rounded-xl overflow-hidden bg-neutral-100 border border-neutral-200 flex flex-col">
+                    <img src="images/node-graphs-grid.png" alt="3x4 grid of packet nodes graphed over time" class="w-full h-auto block">
+                    <div class="p-4 bg-white border-t border-neutral-200">
+                        <p class="text-xs text-neutral-500 leading-relaxed">Data Visualization: The resulting 3x4 grid revealing distinct cyclical saw-tooth patterns in the network traffic.</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div>
             <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Reverse-Engineering Results</h2>
             <p class="mb-4">
-                To verify what these mysterious packet graphs represented, I cross-referenced their visual peaks and troughs against our known InfluxDB telemetry data (which tracked actual recoater speed, dispenser position, and filter pressure).
+                To decode what these mysterious packet graphs represented, I cross-referenced their visual peaks and troughs against our known InfluxDB telemetry data (which tracked actual recoater speed, dispenser position, and filter pressure).
             </p>
             <p>
-                Through this analysis, I successfully proved that "Node ID 2" perfectly correlated with the position and speed of the recoater blade. Deciphering these packets established the crucial baseline needed to automatically trigger the spectrometer and other quality-assurance sensors exactly when the machine was in the correct state.
+                Through this analysis, I successfully proved that "Node ID 2" perfectly correlated with the position and speed of the recoater blade. Deciphering this specific packet established the crucial baseline needed to automatically trigger the Firefly4000 spectrometer exactly when the machine was in the correct, stationary state.
             </p>
         </div>
 
     </article>
+    
     <section class="max-w-3xl mx-auto px-6 py-12 border-t border-neutral-200">
         <h2 class="text-2xl font-semibold text-neutral-900 mb-6">Project Resources</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
