@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advanced Motion & Vision Control | Clement.Builds</title>
+    <title>Advanced Laser Systems & Integration | Clement.Builds</title>
 
     <link rel="icon" type="image/png" href="images/CT32x32.png">
     
@@ -13,14 +13,13 @@
         body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
-<body class="bg-white text-neutral-900 antialiased selection:bg-black selection:text-white">
+<body id="top" class="bg-white text-neutral-900 antialiased selection:bg-black selection:text-white">
 
     <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-neutral-200">
         <div class="max-w-6xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
             <a href="index.html#top" class="font-semibold text-base md:text-lg tracking-tight text-neutral-900 shrink-0 hover:opacity-70 transition-opacity">Clement.Builds</a>
             <div class="flex items-center gap-3 md:gap-6 text-xs md:text-sm font-medium text-neutral-500">
                 
-                <!-- Updated Projects Link -->
                 <a href="index.html#projects" class="hover:text-neutral-900 transition-colors whitespace-nowrap">
                     ← <span class="hidden sm:inline">Back to </span>Projects
                 </a>
@@ -31,16 +30,15 @@
         </div>
     </nav>
 
-    <!-- Project Header & Metadata -->
     <header class="max-w-4xl mx-auto px-6 pt-40 pb-12">
         <h1 class="text-4xl md:text-5xl font-semibold tracking-tight leading-tight mb-8 text-neutral-900">
-            Advanced Motion & Vision Control for Laser Micro-Processing
+            Advanced Motion & Vision Control: Mechanical Design & Integration
         </h1>
         
         <div class="flex flex-wrap gap-x-12 gap-y-6 py-6 border-t border-b border-neutral-200 text-sm">
             <div>
                 <p class="text-neutral-400 font-medium mb-1">Role</p>
-                <p class="text-neutral-900 font-medium">Engineer Intern</p>
+                <p class="text-neutral-900 font-medium">Intern (Assistant Engineer)</p>
             </div>
             <div>
                 <p class="text-neutral-400 font-medium mb-1">Organisation</p>
@@ -52,60 +50,140 @@
             </div>
             <div>
                 <p class="text-neutral-400 font-medium mb-1">Tech Stack</p>
-                <p class="text-neutral-900 font-medium">Autodesk Inventor, Fusion 360, Industrial Lasers</p>
+                <p class="text-neutral-900 font-medium">SolidWorks, Autodesk Inventor, Class 4 Lasers, DFM</p>
             </div>
         </div>
     </header>
 
-    <!-- Main Hero Image -->
     <section class="max-w-6xl mx-auto px-6 pb-16">
-        <div class="w-full aspect-video md:aspect-[21/9] rounded-2xl overflow-hidden bg-neutral-100">
-            <!-- Placeholder image related to laser/motion stages. Update with a real photo if you have one. -->
-            <img src="https://images.unsplash.com/photo-1518314916381-77a37c2a49ae?auto=format&fit=crop&q=80&w=1600" alt="Laser Micro-Processing and Motion Control" class="w-full h-full object-cover">
+        <div class="relative w-full rounded-2xl overflow-hidden bg-white border border-neutral-200 shadow-sm ring-1 ring-inset ring-neutral-200/50 flex justify-center isolate">
+             <!-- Replace with an isometric render of your 4040 Laser Workstation -->
+             <img src="images/laser-workstation-hero.png" alt="Movable Laser Workstation SolidWorks Render" class="w-full max-h-[60vh] object-contain block rounded-2xl">
         </div>
     </section>
 
-    <!-- Project Body Content -->
     <article class="max-w-3xl mx-auto px-6 pb-24 space-y-12 text-lg text-neutral-600 leading-relaxed">
         
         <div>
-            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Hardware-Software Integration</h2>
+            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">The Context</h2>
             <p class="mb-4">
-                A primary focus of my role involves spearheading the hardware-software integration of multi-axis motion stages, galvanometer scanners, and industrial lasers. The core objective of this integration is to optimize laser 3D printing process parameters for high-precision manufacturing.
+                While the overarching objective of this project was to integrate advanced vision and motion control algorithms for laser micro-processing, software algorithms are entirely dependent on rigid, precision-engineered physical foundations. 
+            </p>
+            <p class="mb-4">
+                My core responsibility was to bridge the gap between digital control and physical fabrication. I engineered the optomechatronic infrastructure and mechanical workstations required to make sub-micron laser precision possible, ensuring seamless interoperability between physical stages, sensors, and controllers.
             </p>
         </div>
 
         <div>
-            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Mechanical Design & Assembly</h2>
+            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Phase 1: Mechanical Design & DFM</h2>
             <p class="mb-4">
-                To support the integration of advanced laser sub-systems, I engineered and assembled high-precision mechanical components and fixtures. The CAD modeling and design for these fixtures were executed utilizing Autodesk Inventor and Fusion 360.
+                To support the integration of advanced laser sub-systems and establish a mobile testing environment, I spearheaded the end-to-end design of a custom Movable Laser Workstation.
             </p>
+            <ul class="list-disc pl-6 space-y-2 mb-8">
+                <li><strong>Complex Assemblies:</strong> Utilized SolidWorks and Autodesk Inventor to design a highly rigid 4040 HFS aluminum profile cart capable of supporting >200kg dynamic loads, establishing strict mechanical mates and component clearances.</li>
+                <li><strong>Design for Manufacturing (DFM):</strong> Generated precise 2D manufacturing drawings specifying exact hole patterns, countersunk clearance dimensions (e.g., M6 drop-in hardware), and structural fillet tolerances.</li>
+                <li><strong>Supplier Liaison:</strong> Managed technical procurement by translating engineering requirements to overseas fabrication suppliers via Taobao/Alibaba, ensuring CAD models were accurately interpreted for physical CNC machining.</li>
+            </ul>
+
+            <div class="flex flex-col gap-6 mb-12">
+                <div class="rounded-xl overflow-hidden bg-neutral-100 border border-neutral-200 flex flex-col isolate ring-1 ring-inset ring-neutral-200/50">
+                    <!-- Replace with a clean screenshot of your SolidWorks Assembly -->
+                    <img src="images/workstation-assembly-cad.png" alt="SolidWorks 3D Assembly of Laser Workstation" class="w-full h-auto block">
+                    <div class="p-4 bg-white border-t border-neutral-200">
+                        <p class="text-xs text-neutral-500 leading-relaxed">Mechanical CAD: Fully constrained 3D assembly of the 5-tier 4040 aluminum profile workstation, designed to isolate vibrations for sensitive laser hardware.</p>
+                    </div>
+                </div>
+                
+                <div class="rounded-xl overflow-hidden bg-neutral-100 border border-neutral-200 flex flex-col isolate ring-1 ring-inset ring-neutral-200/50">
+                    <!-- Replace with a snippet of your 2D Drawing showing the M6 Callouts -->
+                    <img src="images/workstation-2d-drawing.png" alt="2D Manufacturing Drawing Snippet" class="w-full h-auto block">
+                    <div class="p-4 bg-white border-t border-neutral-200">
+                        <p class="text-xs text-neutral-500 leading-relaxed">DFM Documentation: Detailing strict countersunk clearance holes (Ø 6.60 THRU, Ø 12.60 X 90°) for overseas CNC fabrication.</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div>
-            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Calibration & Diagnostics</h2>
+            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Phase 2: Optomechatronic Hardware Integration</h2>
             <p class="mb-4">
-                Ensuring system reliability is critical for industrial applications. I conducted rigorous performance verification, diagnostic testing, and calibration on industrial laser configurations. 
+                Beyond the mechanical chassis, I was tasked with the physical and electrical integration of the multi-axis motion stages and galvanometer scanners.
             </p>
-            <ul class="list-disc pl-6 space-y-2 mb-6">
-                <li>Actively resolved ad-hoc engineering bottlenecks as they arose.</li>
-                <li>Provided critical technical support for live system demonstrations.</li>
+            <ul class="list-disc pl-6 space-y-2 mb-8">
+                <li><strong>Hardware Overhaul:</strong> Physically prepped and mapped electrical connecting cables to upgrade the JDX 5-Axis machine's legacy controllers to advanced Elmo motion control drives (Titanium Maestro).</li>
+                <li><strong>System Architecture:</strong> Decoded complex installation manuals to map out the dual-motion synchronization between the SPiiPlusEC (motion controller), syncAXIS (physical stages), and RTC6 (laser scanner).</li>
+                <li><strong>Documentation:</strong> Drafted a comprehensive "5-Axis Handbook" Standard Operating Procedure to centralize the newly mapped protocols for future engineers.</li>
             </ul>
         </div>
 
+        <div>
+            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Phase 3: Laser Operations & Quality Control</h2>
+            <p class="mb-4">
+                Operating high-power industrial lasers requires zero margin for error. I actively participated in the testing, logistics, and quality assurance of the laboratory's optical hardware.
+            </p>
+            <ul class="list-disc pl-6 space-y-2 mb-8">
+                <li><strong>Laser Calibration:</strong> Set up and safely tested Class 4 industrial lasers (LUXINAR E25-9.3 CO2 and GLPN-500-12-75M) under strict laboratory safety protocols.</li>
+                <li><strong>Microscopic Inspection:</strong> Conducted critical quality control on fragile Quartz Block Head (QBH) fiber optic connectors using a monocular microscope, inspecting for micro-contaminants that could cause catastrophic window failure.</li>
+                <li><strong>Logistics:</strong> Coordinated the physical packaging and international RMA logistics for high-value optical hardware, calculating volumetric costs and ensuring safe transit to regional offices.</li>
+            </ul>
+        </div>
+        
+        <div>
+            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Key Takeaways</h2>
+            <p class="mb-4">
+                This experience reinforced that true engineering happens at the intersection of disciplines. By actively participating in every step—from designing SolidWorks models and negotiating with external manufacturers, to mapping electrical pins and inspecting fragile optical fibers—I gained a holistic view of how complex optomechatronic systems move from concept to deployed physical products.
+            </p>
+        </div>
+
     </article>
+
+    <section class="max-w-3xl mx-auto px-6 py-12 border-t border-neutral-200">
+        <h2 class="text-2xl font-semibold text-neutral-900 mb-6">Project Resources</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <!-- Manufacturing Drawing Card -->
+            <a href="link-to-your-pdf-drawing.pdf" target="_blank" class="group flex flex-col border border-neutral-200 rounded-xl overflow-hidden hover:border-neutral-900 hover:shadow-sm transition-all bg-white isolate">
+                <div class="relative w-full aspect-[4/3] bg-neutral-100 overflow-hidden border-b border-neutral-200 isolate ring-1 ring-inset ring-neutral-200/50">
+                    <!-- Replace with thumbnail of your drawing -->
+                    <img src="images/drawing-thumbnail.jpg" alt="2D Manufacturing Drawing Cover" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute top-3 right-3 bg-white/95 backdrop-blur text-xs font-semibold px-2 py-1 rounded shadow-sm text-neutral-700 border border-neutral-100">PDF</div>
+                </div>
+                <div class="p-5 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-neutral-900 font-medium mb-1">Manufacturing Drawings</h3>
+                        <p class="text-sm text-neutral-500 line-clamp-2">Complete 2D CAD drafting and DFM specifications for the workstation.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Presentation Slides Card -->
+            <a href="link-to-your-slides.pdf" target="_blank" class="group flex flex-col border border-neutral-200 rounded-xl overflow-hidden hover:border-neutral-900 hover:shadow-sm transition-all bg-white isolate">
+                <div class="relative w-full aspect-[4/3] bg-neutral-100 overflow-hidden border-b border-neutral-200 isolate ring-1 ring-inset ring-neutral-200/50">
+                    <!-- Replace with thumbnail of your slides -->
+                    <img src="images/slides-thumbnail.jpg" alt="Presentation Slides Cover" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute top-3 right-3 bg-white/95 backdrop-blur text-xs font-semibold px-2 py-1 rounded shadow-sm text-neutral-700 border border-neutral-100">PDF</div>
+                </div>
+                <div class="p-5 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-neutral-900 font-medium mb-1">Design Thought-Flow</h3>
+                        <p class="text-sm text-neutral-500 line-clamp-2">Presentation slides outlining mechanical constraints to project stakeholders.</p>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </section>
 
     <footer id="contact" class="border-t border-neutral-200 mt-12 bg-white">
         <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-neutral-500">
             <p>© Clement TOH - 2026</p>
             <div class="flex items-center gap-6">
                 <a href="index.html#projects" class="hover:text-neutral-900 transition-colors">Projects</a>
-                <!-- Changed href from about.html to #top -->
                 <a href="about.html" class="hover:text-neutral-900 transition-colors">About</a>
                 <a href="mailto:clement.toh2604@gmail.com" class="hover:text-neutral-900 transition-colors">Contact</a>
             </div>
         </div>
     </footer>
-
 </body>
 </html>
