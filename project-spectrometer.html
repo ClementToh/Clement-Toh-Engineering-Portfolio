@@ -60,7 +60,7 @@
     </header>
 
     <section class="max-w-6xl mx-auto px-6 pb-16">
-        <div class="relative w-full rounded-2xl overflow-hidden bg-white border border-neutral-200 shadow-sm ring-1 ring-inset ring-neutral-200/50 flex justify-center">
+        <div class="relative w-full rounded-2xl overflow-hidden bg-white border border-neutral-200 shadow-sm ring-1 ring-inset ring-neutral-200/50 flex justify-center isolate">
             <img src="images/Wire-Tapping-Header.png" alt="Spectrometer Hardware Integration on EOS M 290" class="w-full max-h-[60vh] object-contain block rounded-2xl">
         </div>
     </section>
@@ -82,11 +82,20 @@
             <p class="mb-4">
                 Before collecting data, the physical sensor hardware needed to be robustly integrated into the harsh environment of the printer chamber. 
             </p>
-            <ul class="list-disc pl-6 space-y-2 mb-6">
+            <ul class="list-disc pl-6 space-y-2 mb-8">
                 <li><strong>Hardware Mounting:</strong> Safely mounted the spectrometer beneath the EOS M 290 hood, isolating it outside of the active print chamber.</li>
                 <li><strong>Optical Routing:</strong> Utilized an SMA905-SMA905 Fibre Optic Patchcord with a 1.0mm core to transmit light emissions from the melt pool to the external sensor.</li>
                 <li><strong>Precision Alignment:</strong> Integrated a fibre collimator to align the light into a parallel beam, paired with a focusing lens to reduce the divergence angle. This increased the energy density at the focus point, allowing for highly efficient coupling of light into the spectrometer. Precise alignment was critical to accurately capture the expanding laser-produced plasma plume.</li>
             </ul>
+
+            <div class="flex flex-col gap-6 mb-12">
+                <div class="rounded-xl overflow-hidden bg-neutral-100 border border-neutral-200 flex flex-col isolate ring-1 ring-inset ring-neutral-200/50">
+                    <img src="images/spectrometer-setup.jpg" alt="Spectrometer and fiber optic cable positioning" class="w-full h-auto block">
+                    <div class="p-4 bg-white border-t border-neutral-200">
+                        <p class="text-xs text-neutral-500 leading-relaxed">Optomechanical Integration: Visual representation of the spectrometer's position, routing the fibre optic patchcord through a 13mm machine port to capture internal plasma emissions.</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div>
@@ -106,7 +115,7 @@
             </p>
 
             <div class="flex flex-col gap-6 mb-8">
-                <div class="rounded-xl overflow-hidden bg-neutral-100 border border-neutral-200 flex flex-col">
+                <div class="rounded-xl overflow-hidden bg-neutral-100 border border-neutral-200 flex flex-col isolate ring-1 ring-inset ring-neutral-200/50">
                     <img src="images/node-graphs-grid.png" alt="3x4 grid of packet nodes graphed over time" class="w-full h-auto block">
                     <div class="p-4 bg-white border-t border-neutral-200">
                         <p class="text-xs text-neutral-500 leading-relaxed">Data Visualization: Python scripts utilizing Matplotlib to map 12 extracted packet nodes, revealing distinct cyclical saw-tooth patterns in the hardware network traffic.</p>
@@ -117,6 +126,22 @@
             <p class="mb-4">
                 To validate our findings, I cross-referenced the distinct cyclical patterns in the packet graphs against known InfluxDB telemetry data (tracking recoater speed, dispenser position, and filter pressure). 
             </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div class="rounded-xl overflow-hidden bg-neutral-100 border border-neutral-200 flex flex-col isolate ring-1 ring-inset ring-neutral-200/50">
+                    <img src="images/influxdb-graph.jpg" alt="InfluxDB data tracking EOS M 290 parameters" class="w-full h-auto object-cover">
+                    <div class="p-4 bg-white border-t border-neutral-200 flex-grow">
+                        <p class="text-xs text-neutral-500 leading-relaxed">System Telemetry: InfluxDB tracking key parameters of the EOS M 290 statuses. The outlines of these states were used to match similarities with the decoded packets.</p>
+                    </div>
+                </div>
+                <div class="rounded-xl overflow-hidden bg-neutral-100 border border-neutral-200 flex flex-col isolate ring-1 ring-inset ring-neutral-200/50">
+                    <img src="images/recoater-graph.jpg" alt="Recoater blade position and speed" class="w-full h-auto object-cover">
+                    <div class="p-4 bg-white border-t border-neutral-200 flex-grow">
+                        <p class="text-xs text-neutral-500 leading-relaxed">Hardware Kinematics: The isolated position and speed of the recoater blade during the print job, used to successfully cross-reference and validate the network data.</p>
+                    </div>
+                </div>
+            </div>
+
             <p>
                 This analysis successfully proved that "Node ID 2" perfectly correlated with the physical position and speed of the recoater blade. Deciphering this signal established the crucial baseline needed to automatically trigger the Firefly4000 spectrometer exactly when the physical hardware was in the correct, stationary state.
             </p>
@@ -130,9 +155,9 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             
             <!-- Report Card -->
-            <a href="https://drive.google.com/file/d/1W9TOhxwTP4rxf40mj0UgdFuoLkpxVE1q/view?usp=sharing" target="_blank" class="group flex flex-col border border-neutral-200 rounded-xl overflow-hidden hover:border-neutral-900 hover:shadow-sm transition-all bg-white">
+            <a href="https://drive.google.com/file/d/1W9TOhxwTP4rxf40mj0UgdFuoLkpxVE1q/view?usp=sharing" target="_blank" class="group flex flex-col border border-neutral-200 rounded-xl overflow-hidden hover:border-neutral-900 hover:shadow-sm transition-all bg-white isolate">
                 <!-- Thumbnail Container -->
-                <div class="relative w-full aspect-[4/3] bg-neutral-100 overflow-hidden border-b border-neutral-200">
+                <div class="relative w-full aspect-[4/3] bg-neutral-100 overflow-hidden border-b border-neutral-200 isolate ring-1 ring-inset ring-neutral-200/50">
                     <img src="images/Project Report 2023.jpg" alt="Project Report Cover" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
                     <div class="absolute top-3 right-3 bg-white/95 backdrop-blur text-xs font-semibold px-2 py-1 rounded shadow-sm text-neutral-700 border border-neutral-100">PDF</div>
                 </div>
@@ -146,9 +171,9 @@
             </a>
 
             <!-- Poster Card -->
-            <a href="https://drive.google.com/file/d/1bqPkzb7tGjqC66I2I_as3Gb2MobRNwhw/view?usp=sharing" target="_blank" class="group flex flex-col border border-neutral-200 rounded-xl overflow-hidden hover:border-neutral-900 hover:shadow-sm transition-all bg-white">
+            <a href="https://drive.google.com/file/d/1bqPkzb7tGjqC66I2I_as3Gb2MobRNwhw/view?usp=sharing" target="_blank" class="group flex flex-col border border-neutral-200 rounded-xl overflow-hidden hover:border-neutral-900 hover:shadow-sm transition-all bg-white isolate">
                 <!-- Thumbnail Container -->
-                <div class="relative w-full aspect-[4/3] bg-neutral-100 overflow-hidden border-b border-neutral-200">
+                <div class="relative w-full aspect-[4/3] bg-neutral-100 overflow-hidden border-b border-neutral-200 isolate ring-1 ring-inset ring-neutral-200/50">
                     <img src="images/artc poster.jpg" alt="Project Poster Preview" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
                     <div class="absolute top-3 right-3 bg-white/95 backdrop-blur text-xs font-semibold px-2 py-1 rounded shadow-sm text-neutral-700 border border-neutral-100">PDF</div>
                 </div>
