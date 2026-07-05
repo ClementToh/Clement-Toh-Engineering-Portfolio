@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In-Situ Spectrometer Integration | Clement.Builds</title>
+
+    <link rel="icon" type="image/png" href="images/CT32x32.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body id="top" class="bg-white text-neutral-900 antialiased selection:bg-black selection:text-white">
+
+    <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-neutral-200">
+        <div class="max-w-6xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
+            <a href="index.html#top" class="font-semibold text-base md:text-lg tracking-tight text-neutral-900 shrink-0 hover:opacity-70 transition-opacity">Clement.Builds</a>
+            <div class="flex items-center gap-3 md:gap-6 text-xs md:text-sm font-medium text-neutral-500">
+                
+                <a href="index.html#projects" class="hover:text-neutral-900 transition-colors whitespace-nowrap">
+                    ← <span class="hidden sm:inline">Back to </span>Projects
+                </a>
+                
+                <a href="about.html" class="hover:text-neutral-900 transition-colors whitespace-nowrap">About</a>
+                <a href="mailto:clement.toh2604@gmail.com" class="px-4 py-1.5 md:px-5 md:py-2 bg-[#222222] text-white rounded-full hover:bg-black transition-colors shrink-0 whitespace-nowrap">Contact</a>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="max-w-4xl mx-auto px-6 pt-40 pb-12">
+        <h1 class="text-4xl md:text-5xl font-semibold tracking-tight leading-tight mb-8 text-neutral-900">
+            In-Situ Spectrometer Integration & Hardware Validation
+        </h1>
+        
+        <div class="flex flex-wrap gap-x-12 gap-y-6 py-6 border-t border-b border-neutral-200 text-sm">
+            <div>
+                <p class="text-neutral-400 font-medium mb-1">Role</p>
+                <p class="text-neutral-900 font-medium">Systems Integration Intern</p>
+            </div>
+            <div>
+                <p class="text-neutral-400 font-medium mb-1">Organisation</p>
+                <p class="text-neutral-900 font-medium">
+                    <a href="https://www.a-star.edu.sg/artc" target="_blank" rel="noopener noreferrer" class="hover:underline hover:text-neutral-600 transition-colors">
+                        A*STAR Advanced Remanufacturing and Technology Centre (ARTC)
+                    </a>
+                </p>
+            </div>
+            <div>
+                <p class="text-neutral-400 font-medium mb-1">Period</p>
+                <p class="text-neutral-900 font-medium">Sep 2022 – Apr 2023</p>
+            </div>
+            <div>
+                <p class="text-neutral-400 font-medium mb-1">Tech Stack</p>
+                <p class="text-neutral-900 font-medium">Optomechanics, Sensor Integration, Python, EPL Network Analysis</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="max-w-6xl mx-auto px-6 pb-16">
+        <div class="relative w-full rounded-2xl overflow-hidden bg-white border border-neutral-200 shadow-sm ring-1 ring-inset ring-neutral-200/50 flex justify-center">
+            <img src="images/Wire-Tapping-Header.png" alt="Spectrometer Hardware Integration on EOS M 290" class="w-full max-h-[60vh] object-contain block rounded-2xl">
+        </div>
+    </section>
+
+    <article class="max-w-3xl mx-auto px-6 pb-24 space-y-12 text-lg text-neutral-600 leading-relaxed">
+        
+        <div>
+            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">The Challenge: Optomechatronic Instrumentation</h2>
+            <p class="mb-4">
+                To evaluate how the elemental composition of metal powder could be determined during a live print, we needed to capture the optical spectrum from plasma emissions when the powder was excited by a laser[cite: 1]. 
+            </p>
+            <p class="mb-4">
+                This required integrating a Compact Spectrometer-Firefly4000 directly into a commercial EOS M 290 closed-system 3D printer. The core engineering challenge was twofold: designing the physical optical routing to capture the plume, and establishing a digital handshake to trigger the sensor only when the machine's moving components were completely stationary[cite: 1].
+            </p>
+        </div>
+
+        <div>
+            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Phase 1: Optomechanical Routing & Alignment</h2>
+            <p class="mb-4">
+                Before collecting data, the physical sensor hardware needed to be robustly integrated into the harsh environment of the printer chamber. 
+            </p>
+            <ul class="list-disc pl-6 space-y-2 mb-6">
+                <li><strong>Hardware Mounting:</strong> Safely mounted the spectrometer beneath the EOS M 290 hood, isolating it outside of the active print chamber[cite: 1].</li>
+                <li><strong>Optical Routing:</strong> Utilized an SMA905-SMA905 Fibre Optic Patchcord with a 1.0mm core to transmit light emissions from the melt pool to the external sensor[cite: 1].</li>
+                <li><strong>Precision Alignment:</strong> Integrated a fibre collimator to align the light into a parallel beam, paired with a focusing lens to reduce the divergence angle[cite: 1]. This increased the energy density at the focus point, allowing for highly efficient coupling of light into the spectrometer[cite: 1]. Precise alignment was critical to accurately capture the expanding laser-produced plasma plume[cite: 1].</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Phase 2: System Synchronization via Telemetry</h2>
+            <p class="mb-4">
+                The spectrometer must only collect data when the building platform and recoater blade are strictly stationary to ensure accurate readings[cite: 1]. Because the EOS M 290 is a proprietary "black-box" machine, there was no direct software trigger available. 
+            </p>
+            <p class="mb-4">
+                To solve this controls problem, we bypassed the software restrictions by hardware tapping the machine's Industrial PC (IPC). By eavesdropping on the internal Ethernet Powerlink (EPL) V2 network, we could capture the real-time communications between the IPC and the internal servomotors/stepper motors[cite: 1]. We monitored a live titanium print job over 30.6 hours, capturing over 337 files and millions of packets for analysis[cite: 1].
+            </p>
+        </div>
+
+        <div>
+            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Phase 3: Hardware Validation & Data Pipelines</h2>
+            <p class="mb-4">
+                With the raw network traffic captured, I engineered a Python data pipeline to parse the hex strings, downsample the massive dataset to optimize processing (reducing to 8,279 alternate rows), and graph the electrical signals against machine epoch time[cite: 1].
+            </p>
+
+            <div class="flex flex-col gap-6 mb-8">
+                <div class="rounded-xl overflow-hidden bg-neutral-100 border border-neutral-200 flex flex-col">
+                    <img src="images/node-graphs-grid.png" alt="3x4 grid of packet nodes graphed over time" class="w-full h-auto block">
+                    <div class="p-4 bg-white border-t border-neutral-200">
+                        <p class="text-xs text-neutral-500 leading-relaxed">Data Visualization: Python scripts utilizing Matplotlib to map 12 extracted packet nodes, revealing distinct cyclical saw-tooth patterns in the hardware network traffic.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="mb-4">
+                To validate our findings, I cross-referenced the distinct cyclical patterns in the packet graphs against known InfluxDB telemetry data (tracking recoater speed, dispenser position, and filter pressure)[cite: 1]. 
+            </p>
+            <p>
+                This analysis successfully proved that "Node ID 2" perfectly correlated with the physical position and speed of the recoater blade[cite: 1]. Deciphering this signal established the crucial baseline needed to automatically trigger the Firefly4000 spectrometer exactly when the physical hardware was in the correct, stationary state.
+            </p>
+        </div>
+
+    </article>
+    
+    <section class="max-w-3xl mx-auto px-6 py-12 border-t border-neutral-200">
+        <h2 class="text-2xl font-semibold text-neutral-900 mb-6">Project Resources</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <!-- Report Card -->
+            <a href="https://drive.google.com/file/d/1W9TOhxwTP4rxf40mj0UgdFuoLkpxVE1q/view?usp=sharing" target="_blank" class="group flex flex-col border border-neutral-200 rounded-xl overflow-hidden hover:border-neutral-900 hover:shadow-sm transition-all bg-white">
+                <!-- Thumbnail Container -->
+                <div class="relative w-full aspect-[4/3] bg-neutral-100 overflow-hidden border-b border-neutral-200">
+                    <img src="images/Project Report 2023.jpg" alt="Project Report Cover" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute top-3 right-3 bg-white/95 backdrop-blur text-xs font-semibold px-2 py-1 rounded shadow-sm text-neutral-700 border border-neutral-100">PDF</div>
+                </div>
+                <!-- Text Container -->
+                <div class="p-5 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-neutral-900 font-medium mb-1">Project Report</h3>
+                        <p class="text-sm text-neutral-500 line-clamp-2">Detailed documentation of the sensor mounting, optical routing, and hardware validation data.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Poster Card -->
+            <a href="https://drive.google.com/file/d/1bqPkzb7tGjqC66I2I_as3Gb2MobRNwhw/view?usp=sharing" target="_blank" class="group flex flex-col border border-neutral-200 rounded-xl overflow-hidden hover:border-neutral-900 hover:shadow-sm transition-all bg-white">
+                <!-- Thumbnail Container -->
+                <div class="relative w-full aspect-[4/3] bg-neutral-100 overflow-hidden border-b border-neutral-200">
+                    <img src="images/artc poster.jpg" alt="Project Poster Preview" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute top-3 right-3 bg-white/95 backdrop-blur text-xs font-semibold px-2 py-1 rounded shadow-sm text-neutral-700 border border-neutral-100">PDF</div>
+                </div>
+                <!-- Text Container -->
+                <div class="p-5 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-neutral-900 font-medium mb-1">Summary Poster</h3>
+                        <p class="text-sm text-neutral-500 line-clamp-2">Visual presentation of the spectrometer integration methodology and final analysis results.</p>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+    
+    <footer id="contact" class="border-t border-neutral-200 mt-12 bg-white">
+        <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-neutral-500">
+            <p>© Clement TOH - 2026</p>
+            <div class="flex items-center gap-6">
+                <a href="index.html#projects" class="hover:text-neutral-900 transition-colors">Projects</a>
+                <a href="about.html" class="hover:text-neutral-900 transition-colors">About</a>
+                <a href="mailto:clement.toh2604@gmail.com" class="hover:text-neutral-900 transition-colors">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
