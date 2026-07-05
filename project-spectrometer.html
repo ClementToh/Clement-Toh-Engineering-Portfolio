@@ -127,16 +127,18 @@
                 To validate our findings, I cross-referenced the distinct cyclical patterns in the packet graphs against known InfluxDB telemetry data (tracking recoater speed, dispenser position, and filter pressure). 
             </p>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <!-- CHANGED TO A FLEX COLUMN FOR TOP-BOTTOM STACKING -->
+            <div class="flex flex-col gap-6 mb-8">
                 <div class="rounded-xl overflow-hidden bg-neutral-100 border border-neutral-200 flex flex-col isolate ring-1 ring-inset ring-neutral-200/50">
                     <img src="images/influxdb-graph.jpg" alt="InfluxDB data tracking EOS M 290 parameters" class="w-full h-auto object-cover">
-                    <div class="p-4 bg-white border-t border-neutral-200 flex-grow">
+                    <div class="p-4 bg-white border-t border-neutral-200">
                         <p class="text-xs text-neutral-500 leading-relaxed">System Telemetry: InfluxDB tracking key parameters of the EOS M 290 statuses. The outlines of these states were used to match similarities with the decoded packets.</p>
                     </div>
                 </div>
+                
                 <div class="rounded-xl overflow-hidden bg-neutral-100 border border-neutral-200 flex flex-col isolate ring-1 ring-inset ring-neutral-200/50">
                     <img src="images/recoater-graph.jpg" alt="Recoater blade position and speed" class="w-full h-auto object-cover">
-                    <div class="p-4 bg-white border-t border-neutral-200 flex-grow">
+                    <div class="p-4 bg-white border-t border-neutral-200">
                         <p class="text-xs text-neutral-500 leading-relaxed">Hardware Kinematics: The isolated position and speed of the recoater blade during the print job, used to successfully cross-reference and validate the network data.</p>
                     </div>
                 </div>
