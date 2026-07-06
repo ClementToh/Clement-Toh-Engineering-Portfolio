@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IIoT Integration | Clement.Builds</title>
+    <title>Clement Toh | Hardware & Systems Integration Engineer</title>
 
     <link rel="icon" type="image/png" href="images/CT32x32.png">
     
@@ -13,99 +13,159 @@
         body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
-<body class="bg-white text-neutral-900 antialiased selection:bg-black selection:text-white">
+<body id="top" class="bg-white text-neutral-900 antialiased selection:bg-black selection:text-white">
 
     <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-neutral-200">
         <div class="max-w-6xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
-            <a href="index.html#top" class="font-semibold text-base md:text-lg tracking-tight text-neutral-900 shrink-0 hover:opacity-70 transition-opacity">Clement.Builds</a>
+            <a href="#top" class="font-semibold text-base md:text-lg tracking-tight text-neutral-900 shrink-0">Clement.Builds</a>
             <div class="flex items-center gap-3 md:gap-6 text-xs md:text-sm font-medium text-neutral-500">
-                
-                <!-- Updated Projects Link -->
-                <a href="index.html#projects" class="hover:text-neutral-900 transition-colors whitespace-nowrap">
-                    ← <span class="hidden sm:inline">Back to </span>Projects
-                </a>
-                
-                <a href="about.html" class="hover:text-neutral-900 transition-colors whitespace-nowrap">About</a>
-                <a href="mailto:clement.toh2604@gmail.com" class="px-4 py-1.5 md:px-5 md:py-2 bg-[#222222] text-white rounded-full hover:bg-black transition-colors shrink-0 whitespace-nowrap">Contact</a>
+                <a href="#projects" class="hover:text-neutral-900 transition-colors">Projects</a>
+                <a href="about.html" class="hover:text-neutral-900 transition-colors">About</a>
+                <a href="mailto:clement.toh2604@gmail.com" class="px-4 py-1.5 md:px-5 md:py-2 bg-neutral-900 text-white rounded-full hover:bg-neutral-800 transition-colors shrink-0">Contact</a>
             </div>
         </div>
     </nav>
 
-    <!-- Project Header & Metadata -->
-    <header class="max-w-4xl mx-auto px-6 pt-40 pb-12">
-        <h1 class="text-4xl md:text-5xl font-semibold tracking-tight leading-tight mb-8 text-neutral-900">
-            Industrial IoT Integration for EOS M 290 LPBF 3D Printing
+    <section id="about" class="max-w-4xl mx-auto px-6 pt-32 pb-16 text-center">
+        
+        <div class="flex justify-center w-full mb-6">
+            <div class="w-24 h-24 md:w-32 md:h-32 relative bg-white rounded-full border border-neutral-200 shadow-sm p-1">
+                <div class="w-full h-full rounded-full overflow-hidden relative">
+                    <img src="images/profilephoto.jpg" alt="Clement Toh" class="w-full h-full object-cover object-[center_5%] scale-[1.30]">
+                </div>
+            </div>
+        </div>
+
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight leading-tight mb-6 text-neutral-900">
+            <strong>Mechanical Engineer</strong> bridging physical hardware with real-time data
         </h1>
         
-        <div class="flex flex-wrap gap-x-12 gap-y-6 py-6 border-t border-b border-neutral-200 text-sm">
-            <div>
-                <p class="text-neutral-400 font-medium mb-1">Role</p>
-                <p class="text-neutral-900 font-medium">Research Intern</p>
-            </div>
-            <div>
-                <p class="text-neutral-400 font-medium mb-1">Organisation</p>
-                <p class="text-neutral-900 font-medium">
-                    <a href="https://www.a-star.edu.sg/artc" target="_blank" rel="noopener noreferrer" class="hover:underline hover:text-neutral-600 transition-colors">
-                        A*STAR Advanced Remanufacturing and Technology Centre (ARTC)
-                    </a>
-                </p>
-            </div>
-            <div>
-                <p class="text-neutral-400 font-medium mb-1">Period</p>
-                <p class="text-neutral-900 font-medium">Sep 22 – Apr 23</p>
-            </div>
-            <div>
-                <p class="text-neutral-400 font-medium mb-1">Tech Stack</p>
-                <p class="text-neutral-900 font-medium">Python, InfluxDB, Grafana, NI DAQ</p>
-            </div>
-        </div>
-    </header>
-
-    <!-- Main Hero Image -->
-    <section class="max-w-6xl mx-auto px-6 pb-16">
-        <div class="w-full aspect-video md:aspect-[21/9] rounded-2xl overflow-hidden bg-neutral-100">
-            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1600" alt="Industrial Metal 3D Printer" class="w-full h-full object-cover">
-        </div>
-    </section>
-
-    <!-- Project Body Content -->
-    <article class="max-w-3xl mx-auto px-6 pb-24 space-y-12 text-lg text-neutral-600 leading-relaxed">
-        
-        <div>
-            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Project Overview</h2>
-            <p class="mb-4">
-                During my time at the Advanced Remanufacturing and Technology Centre (A*STAR), I spearheaded an industry-linked additive manufacturing project to bring remote monitoring capabilities to industrial 3D printing. The core objective was to successfully integrate an M5Stack FIRE Industrial IoT device with a commercial EOS M 290 Laser Powder Bed Fusion (LPBF) metal 3D printer.
-            </p>
-        </div>
-
-        <div>
-            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Custom Sensor Instrumentation</h2>
-            <p class="mb-6">
-                To achieve real-time telemetry, I engineered a custom sensor instrumentation system. This involved modifying the industrial hardware to safely route 12 separate signal channels from two strain gauges and an NI-9236 DAQ module through custom-machined 13 mm ports.
-            </p>
-            
-            <div class="w-full aspect-[4/3] rounded-xl overflow-hidden bg-neutral-100 my-8">
-                 <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=1200" alt="Sensor Instrumentation Routing" class="w-full h-full object-cover">
-            </div>
-        </div>
-
-        <div>
-            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Data Pipeline & Results</h2>
-            <p class="mb-4">
-                Beyond the physical hardware, I built an end-to-end industrial data pipeline via InfluxDB and Grafana to simultaneously analyze five critical process parameters during live prints.
+        <div class="space-y-4 text-neutral-600 text-lg md:text-xl leading-relaxed mb-12 max-w-3xl mx-auto">
+            <p>
+                Specializing in mechatronics, advanced manufacturing, and IIoT instrumentation. 
             </p>
             <p>
-                Through rigorous LPBF validation experiments, the telemetry system successfully identified micro-level powder bed deviations of just <strong>~50 µm</strong> and maintained oxygen levels below <strong>0.1%</strong>.
+               Currently engineering advanced motion and vision control platforms for industrial laser micro-processing systems at <strong>JD Union</strong>.
             </p>
         </div>
+        
+        <!-- Friction-Free US Co-Op Pitch Block -->
+        <div class="bg-neutral-50 border border-neutral-200 rounded-2xl p-6 md:p-8 max-w-2xl mx-auto text-left shadow-sm">
+            <h2 class="text-neutral-900 font-semibold text-lg md:text-xl mb-4 flex items-center gap-2">
+                🇺🇸 US Hardware Co-Op Candidate
+            </h2>
+            <ul class="text-neutral-600 text-sm md:text-base space-y-3 mb-8">
+                <li><strong class="text-neutral-800">Target Roles:</strong> Hardware Validation, Systems Integration, Controls/Mechatronics</li>
+                <li><strong class="text-neutral-800">Availability:</strong> 7-Month extended block (January 4 – August 1, 2027)</li>
+                <li><strong class="text-neutral-800">Visa Status:</strong> Fully sponsored J-1 Visa via 3rd-party sponsor (Zero administrative or financial burden for hiring company).</li>
+            </ul>
+            <div class="flex flex-col sm:flex-row gap-3">
+                <a href="link-to-your-us-dossier-pdf.pdf" target="_blank" rel="noopener noreferrer" class="w-full text-center px-6 py-3 bg-[#222222] text-white text-sm font-medium rounded-lg hover:bg-black transition-colors shadow-sm">
+                    View US Co-Op Dossier (PDF)
+                </a>
+                <a href="https://www.linkedin.com/in/clement26" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto text-center px-6 py-3 bg-white text-neutral-900 border border-neutral-200 text-sm font-medium rounded-lg hover:bg-neutral-50 transition-colors shrink-0">
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+        
+    </section>
 
-    </article>
+    <section id="projects" class="max-w-6xl mx-auto px-6 pt-0 pb-12">
+        <h2 class="text-2xl font-semibold mb-8 text-neutral-900 text-center">Industrial & Research Projects</h2>
+        
+        <div class="flex flex-wrap justify-center gap-8 mb-20">
+            
+            <!-- JD Union Project -->
+            <a href="project-jd-union.html" class="group flex flex-col w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-sm">
+                <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-neutral-100 mb-4 isolate ring-1 ring-inset ring-neutral-200/50 shrink-0">
+                    <img src="images/JDU Header.png" alt="Advanced Motion & Vision Control" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 rounded-2xl">
+                </div>
+                <div class="flex flex-col flex-grow">
+                    <div class="flex justify-between items-start gap-4 mb-2">
+                        <h3 class="text-lg font-semibold text-neutral-900 leading-snug">Advanced Motion & Vision Control Integration</h3>
+                        <span class="text-neutral-500 text-xs font-medium px-2 py-1 bg-neutral-100 rounded-md shrink-0">2026</span>
+                    </div>
+                    <p class="text-sm text-neutral-600 mb-4 line-clamp-2">Engineered optomechatronic infrastructure and upgraded 5-axis systems for sub-micron laser precision.</p>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="text-xs font-medium text-neutral-600 bg-white border border-neutral-200 px-2 py-1 rounded-md">SolidWorks</span>
+                        <span class="text-xs font-medium text-neutral-600 bg-white border border-neutral-200 px-2 py-1 rounded-md">Motion Control</span>
+                        <span class="text-xs font-medium text-neutral-600 bg-white border border-neutral-200 px-2 py-1 rounded-md">Optomechanics</span>
+                    </div>
+                </div>
+            </a>
 
-    <footer id="contact" class="border-t border-neutral-200 bg-white">
+            <!-- ARTC IIoT Project -->
+            <a href="project-artc-integration.html" class="group flex flex-col w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-sm">
+                <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-neutral-100 mb-4 isolate ring-1 ring-inset ring-neutral-200/50 shrink-0">
+                    <img src="images/ARTC Header.png" alt="End-to-End IIoT Integration" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 rounded-2xl">
+                </div>
+                <div class="flex flex-col flex-grow">
+                    <div class="flex justify-between items-start gap-4 mb-2">
+                        <h3 class="text-lg font-semibold text-neutral-900 leading-snug">End-to-End IIoT Integration for LPBF 3D Printing</h3>
+                        <span class="text-neutral-500 text-xs font-medium px-2 py-1 bg-neutral-100 rounded-md shrink-0">2023</span>
+                    </div>
+                    <p class="text-sm text-neutral-600 mb-4 line-clamp-2">Built robust hardware telemetry pipelines mapping 12-channel sensors to edge devices and databases.</p>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="text-xs font-medium text-neutral-600 bg-white border border-neutral-200 px-2 py-1 rounded-md">C++</span>
+                        <span class="text-xs font-medium text-neutral-600 bg-white border border-neutral-200 px-2 py-1 rounded-md">InfluxDB</span>
+                        <span class="text-xs font-medium text-neutral-600 bg-white border border-neutral-200 px-2 py-1 rounded-md">NI DAQ</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Spectrometer Validation Project -->
+            <a href="project-spectrometer.html" class="group flex flex-col w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-sm">
+                <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-neutral-100 mb-4 isolate ring-1 ring-inset ring-neutral-200/50 shrink-0">
+                    <img src="images/spectrometer-thumbnail.png" alt="In-Situ Spectrometer Integration" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 rounded-2xl">
+                </div>
+                <div class="flex flex-col flex-grow">
+                    <div class="flex justify-between items-start gap-4 mb-2">
+                        <h3 class="text-lg font-semibold text-neutral-900 leading-snug">In-Situ Spectrometer Integration & Validation</h3>
+                        <span class="text-neutral-500 text-xs font-medium px-2 py-1 bg-neutral-100 rounded-md shrink-0">2023</span>
+                    </div>
+                    <p class="text-sm text-neutral-600 mb-4 line-clamp-2">Reverse-engineered IPC network packets to synchronize optical sensors with physical hardware kinematics.</p>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="text-xs font-medium text-neutral-600 bg-white border border-neutral-200 px-2 py-1 rounded-md">Python</span>
+                        <span class="text-xs font-medium text-neutral-600 bg-white border border-neutral-200 px-2 py-1 rounded-md">Hardware Validation</span>
+                        <span class="text-xs font-medium text-neutral-600 bg-white border border-neutral-200 px-2 py-1 rounded-md">EPL</span>
+                    </div>
+                </div>
+            </a>
+            
+        </div>
+
+        <h2 class="text-2xl font-semibold mb-8 text-neutral-900 text-center">Personal & Passion Project</h2>
+        
+        <div class="flex flex-wrap justify-center gap-8">
+            <!-- 3D Printer Optimization -->
+            <a href="project-3d-printer.html" class="group flex flex-col w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-sm">
+                <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-neutral-100 mb-4 isolate ring-1 ring-inset ring-neutral-200/50 shrink-0">
+                    <img src="images/3D Printer Thermal & Hardware Optimization.png" alt="3D Printer Customization" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 rounded-2xl">
+                </div>
+                <div class="flex flex-col flex-grow">
+                    <div class="flex justify-between items-start gap-4 mb-2">
+                        <h3 class="text-lg font-semibold text-neutral-900 leading-snug">3D Printer Thermal & Hardware Optimization</h3>
+                        <span class="text-neutral-500 text-xs font-medium px-2 py-1 bg-neutral-100 rounded-md shrink-0">2024</span>
+                    </div>
+                    <p class="text-sm text-neutral-600 mb-4 line-clamp-2">Diagnosed and redesigned thermal assemblies to reliably manufacture high-torque functional prototypes.</p>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="text-xs font-medium text-neutral-600 bg-white border border-neutral-200 px-2 py-1 rounded-md">Fusion 360</span>
+                        <span class="text-xs font-medium text-neutral-600 bg-white border border-neutral-200 px-2 py-1 rounded-md">Thermal Design</span>
+                        <span class="text-xs font-medium text-neutral-600 bg-white border border-neutral-200 px-2 py-1 rounded-md">Prototyping</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    
+    <footer id="contact" class="border-t border-neutral-200 mt-12 bg-white">
         <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-neutral-500">
             <p>© Clement TOH - 2026</p>
-            <div class="flex gap-6">
-                <a href="mailto:clement.toh2604@gmail.com" class="hover:text-neutral-900 transition-colors">Contact Me</a>
+            <div class="flex items-center gap-6">
+                <a href="#projects" class="hover:text-neutral-900 transition-colors">Projects</a>
+                <a href="about.html" class="hover:text-neutral-900 transition-colors">About</a>
+                <a href="mailto:clement.toh2604@gmail.com" class="hover:text-neutral-900 transition-colors">Contact</a>
             </div>
         </div>
     </footer>
