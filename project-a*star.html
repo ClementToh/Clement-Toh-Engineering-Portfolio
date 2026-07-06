@@ -26,8 +26,7 @@
         </div>
     </nav>
 
-    <!-- Reduced pb-16 to pb-8 here to shrink the gap below the US Co-Op Block -->
-    <section id="about" class="max-w-4xl mx-auto px-6 pt-32 pb-8 text-center">
+    <section id="about" class="max-w-4xl mx-auto px-6 pt-32 pb-16 text-center">
         
         <div class="flex justify-center w-full mb-6">
             <div class="w-24 h-24 md:w-32 md:h-32 relative bg-white rounded-full border border-neutral-200 shadow-sm p-1">
@@ -56,11 +55,22 @@
                 <img src="https://flagcdn.com/us.svg" alt="US Flag" class="w-6 md:w-7 h-auto shrink-0 shadow-sm border border-neutral-200/50 rounded-sm">
                 <span>United States Co-Op/Internship Candidate (Engineering)</span>
             </h2>
-            <ul class="text-neutral-600 text-sm md:text-base space-y-3 mb-8">
-                <li><strong class="text-neutral-800">Target Roles:</strong> Hardware Validation, Systems Integration, Controls/Mechatronics</li>
-                <li><strong class="text-neutral-800">Availability:</strong> 7-Month extended block (January 4, 2027 – August 1, 2027)</li>
-                <li><strong class="text-neutral-800">Visa Status:</strong> Fully sponsored J-1 Visa via 3rd-party sponsor (Zero administrative or financial burden for hiring company).</li>
-            </ul>
+            
+            <!-- REPLACED LIST WITH CSS GRID FOR PERFECT TABULAR ALIGNMENT -->
+            <div class="grid grid-cols-[auto_1fr] gap-x-3 md:gap-x-5 gap-y-3 text-sm md:text-base text-neutral-600 mb-8 leading-relaxed">
+                <div class="font-semibold text-neutral-800 whitespace-nowrap">Target Roles:</div>
+                <div>Hardware Validation, Systems Integration, Controls/Mechatronics</div>
+
+                <div class="font-semibold text-neutral-800 whitespace-nowrap">Availability:</div>
+                <div>7 months (January 4, 2027 &ndash; August 1, 2027)</div>
+
+                <div class="font-semibold text-neutral-800 whitespace-nowrap">Visa Status:</div>
+                <div>
+                    Fully sponsored J-1 Visa via 3rd-party sponsor<br>
+                    (Zero administrative or financial burden for hiring company)
+                </div>
+            </div>
+
             <div class="flex flex-col sm:flex-row gap-3">
                 <a href="link-to-your-us-dossier-pdf.pdf" target="_blank" rel="noopener noreferrer" class="w-full text-center px-6 py-3 bg-[#222222] text-white text-sm font-medium rounded-lg hover:bg-black transition-colors shadow-sm">
                     View US Co-Op Dossier (PDF)
@@ -73,8 +83,7 @@
         
     </section>
 
-    <!-- Reduced pt-12 to pt-8 here to shrink the gap above the Projects Header -->
-    <section id="projects" class="max-w-6xl mx-auto px-6 pt-8 pb-12">
+    <section id="projects" class="max-w-6xl mx-auto px-6 pt-12 pb-12">
         <h2 class="text-2xl font-semibold mb-8 text-neutral-900 text-center">Industrial & Research Projects</h2>
         
         <div class="flex flex-wrap justify-center gap-8 mb-20">
