@@ -57,8 +57,7 @@
 
     <section class="max-w-6xl mx-auto px-6 pb-16">
         <div class="relative w-full rounded-2xl overflow-hidden bg-white border border-neutral-200 shadow-sm ring-1 ring-inset ring-neutral-200/50 flex justify-center isolate">
-             <!-- UPDATED HERO IMAGE TO THE CUSTOM-MADE STATION, HIGHLIGHTING THE BRIDGE TO PHYSICAL integration -->
-             <img src="images/JDU Custom-made Movable Laser Station.png" alt="Detailed render of the custom movable laser workstation with annotations" class="w-full max-h-[60vh] object-contain block rounded-2xl">
+             <img src="images/Assembly Annotated.jpg" alt="Detailed render of the custom movable laser workstation with annotations" class="w-full max-h-[60vh] object-contain block rounded-2xl">
         </div>
     </section>
 
@@ -67,52 +66,50 @@
         <div>
             <h2 class="text-2xl font-semibold text-neutral-900 mb-4">The Context</h2>
             <p class="mb-4">
-                While the overarching objective of this project was to integrate advanced vision and motion control algorithms for laser micro-processing, software algorithms are entirely dependent on rigid, precision-engineered physical foundations. 
+                In advanced laser processing, motion control software is only as good as the physical hardware it sits on. While our team was focused on integrating advanced vision and motion control algorithms, these systems required rigid, precision-engineered physical foundations to achieve sub-micron accuracy.
             </p>
             <p class="mb-4">
-                My core responsibility was to bridge the gap between digital control and physical fabrication. I engineered the optomechatronic infrastructure and mechanical workstations required to make sub-micron laser precision possible, ensuring seamless interoperability between physical stages, sensors, and controllers.
+                My core responsibility was to bridge the gap between digital intent and physical fabrication. I spearheaded the end-to-end mechanical design of the laboratory's optomechatronic infrastructure, engineering the heavy-duty workstations required to securely house and isolate sensitive laser control components.
             </p>
         </div>
 
         <div>
-            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Mechanical Design & DFM</h2>
+            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Structural CAD & Workspace Architecture</h2>
             <p class="mb-4">
-                To support the integration of advanced laser sub-systems and establish a mobile testing environment, I spearheaded the end-to-end design of a custom Movable Laser Workstation.
+                To support the integration of advanced laser sub-systems and establish a mobile testing environment, I engineered a custom Movable Laser Workstation from the ground up using SolidWorks.
             </p>
             <ul class="list-disc pl-6 space-y-2 mb-8">
-                <li><strong>Complex Assemblies:</strong> Utilised SolidWorks and Autodesk Inventor to design a highly rigid 4040 HFS aluminum profile cart capable of supporting >200kg dynamic loads, establishing strict mechanical mates and component clearances.</li>
-                <li><strong>Design for Manufacturing (DFM):</strong> Generated precise 2D manufacturing drawings specifying exact hole patterns, countersunk clearance dimensions (e.g., M6 drop-in hardware), and structural fillet tolerances.</li>
-                <li><strong>Supplier Liaison:</strong> Managed technical procurement by translating engineering requirements to overseas fabrication suppliers via Taobao, ensuring CAD models were accurately interpreted for physical CNC machining.</li>
+                <li><strong>Complex Assemblies:</strong> Designed a highly rigid 5-tier structural chassis utilizing 4040 HFS aluminum extrusions (8mm slot width). The assembly was heavily constrained to ensure absolute squareness and isolate vibrations.</li>
+                <li><strong>Payload Integration:</strong> Specifically dimensioned the internal shelving to securely house an IPG Ytterbium Fibre Laser, a dedicated laser chiller, and a NANIO Air Power Supply, ensuring optimal thermal dissipation and cable routing.</li>
+                <li><strong>Dynamic Stability:</strong> Selected and integrated compact caster adjusters equipped to safely withstand and distribute dynamic loads exceeding 250kg across the chassis footprint.</li>
             </ul>
 
             <div class="flex flex-col gap-6 mb-12">
                 <div class="rounded-xl overflow-hidden bg-neutral-100 border border-neutral-200 flex flex-col isolate ring-1 ring-inset ring-neutral-200/50">
-                    <!-- REPLACED PLACEHOLDER IMAGE WITH THE ACTUAL STATION RENDER AND ANNOTATIONS -->
-                    <img src="images/JDU Custom-made Movable Laser Station.png" alt="Detailed 3D assembly and dimensioned render of the custom laser workstation" class="w-full h-auto block">
+                    <img src="images/Assembly Annotated.jpg" alt="Detailed 3D assembly and dimensioned render of the custom laser workstation" class="w-full h-auto block">
                     <div class="p-4 bg-white border-t border-neutral-200">
-                        <p class="text-xs text-neutral-500 leading-relaxed">Mechanical CAD Transition: Highly constrained isometric render of the 5-tier 4040 aluminum profile workstation, designed to isolate vibrations for sensitive laser hardware and negotiate overseas CNC fabrication.</p>
+                        <p class="text-xs text-neutral-500 leading-relaxed">Mechanical Architecture: Isometric render of the 5-tier workstation, designed with strict clearances for IPG laser hardware and constructed from 4040 aluminum profiles for maximum rigidity.</p>
                     </div>
                 </div>
             </div>
         </div>
 
         <div>
-            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Next: Optomechatronic Hardware Integration</h2>
+            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Design for Manufacturability (DFM)</h2>
             <p class="mb-4">
-                Beyond the mechanical chassis, I was tasked with the physical and electrical integration of the multi-axis motion stages and galvanometer scanners.
+                Creating a 3D model is only half the engineering process; the design must be executable. I managed the transition from digital assembly to physical fabrication.
             </p>
             <ul class="list-disc pl-6 space-y-2 mb-8">
-                <li><strong>Hardware Overhaul:</strong> Physically prepped and mapped electrical connecting cables to upgrade the JDX 5-Axis machine's legacy controllers to advanced Elmo motion control drives (Titanium Maestro).</li>
-                <li><strong>System Architecture:</strong> Decoded complex installation manuals to map out the dual-motion synchronization between the SPiiPlusEC (motion controller), syncAXIS (physical stages), and RTC6 (laser scanner).</li>
-                <li><strong>Documentation:</strong> Drafted a comprehensive [5-AXIS Curved Surface Laser Micromaching Handbook] Standard Operating Procedure to centralize the newly mapped protocols for future engineers.</li>
+                <li><strong>2D Engineering Drafting:</strong> Generated comprehensive manufacturing drawings complete with plan, front, right, and isometric views using standard 3rd angle projection.</li>
+                <li><strong>Hardware Specification:</strong> Defined exact hole patterns, 3mm structural fillet tolerances, and specified M6x16 countersunk hex screws for the custom laser head base top-plate.</li>
+                <li><strong>Technical Procurement:</strong> Managed supplier liaison by translating these precise CAD specifications to overseas fabrication partners via Taobao, ensuring accurate CNC machining and minimizing spare part holdings through standardized 40S aluminum brackets.</li>
             </ul>
 
             <div class="flex flex-col gap-6 mb-12">
                 <div class="rounded-xl overflow-hidden bg-neutral-100 border border-neutral-200 flex flex-col isolate ring-1 ring-inset ring-neutral-200/50">
-                    <!-- ADDED NEW IMAGE CARD FOR PHASE 2, REFERENCING THE MACHINE AND Integration DETAILS -->
-                    <img src="images/JDU 5-Axis Machine.jpeg" alt="Multi-axis machine with new Elmo motion control drives integrated" class="w-full h-auto block">
+                    <img src="images/Assembly Drawing Coloured.jpg" alt="2D engineering drawing of the laser workstation" class="w-full h-auto block">
                     <div class="p-4 bg-white border-t border-neutral-200">
-                        <p class="text-xs text-neutral-500 leading-relaxed">Optomechatronic Integration: Physical overhaul of the JDU JDX 5-Axis machine, involving intricate electrical pin mapping and controller upgrades to Elmo Titanium Maestro for synchronized operations.</p>
+                        <p class="text-xs text-neutral-500 leading-relaxed">DFM Execution: Complete 2D drafted specification for the workstation. Accurately defining these tolerances was critical for seamless overseas CNC fabrication and assembly.</p>
                     </div>
                 </div>
             </div>
@@ -121,7 +118,7 @@
         <div>
             <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Ongoing: Laser Operations & Quality Control</h2>
             <p class="mb-4">
-                Operating high-power industrial lasers requires zero margin for error. I actively participated in the testing, logistics, and quality assurance of the laboratory's optical hardware.
+                Operating high-power industrial lasers requires zero margin for error. Beyond mechanical design, I actively participated in the testing, logistics, and quality assurance of the laboratory's optical hardware.
             </p>
             <ul class="list-disc pl-6 space-y-2 mb-8">
                 <li><strong>Laser Calibration:</strong> Set up and safely tested Class 4 industrial lasers (LUXINAR E25-9.3 CO2 and GLPN-500-12-75M) under strict laboratory safety protocols.</li>
@@ -129,7 +126,6 @@
                 <li><strong>Logistics:</strong> Coordinated the physical packaging and international RMA logistics for high-value optical hardware, calculating volumetric costs and ensuring safe transit to regional offices.</li>
             </ul>
 
-            <!-- NEW GALLERY SECTION FOR PHASE 3, COMBINING OPERATIONAL TESTING AND QC INSPECTION -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
                 <div class="rounded-xl overflow-hidden bg-neutral-100 border border-neutral-200 flex flex-col isolate ring-1 ring-inset ring-neutral-200/50">
                     <img src="images/JDU Testing LUXINAR E25-9.3 CO2 Laser.jpeg" alt="Setting up and testing the LUXINAR CO2 laser block" class="w-full h-48 object-cover">
@@ -147,49 +143,14 @@
         </div>
         
         <div>
-            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Key Takeaways</h2>
+            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Systems-Level Thinking</h2>
             <p class="mb-4">
-                This experience reinforced that true engineering happens at the intersection of disciplines. By actively participating in every step, from designing SolidWorks models and negotiating with external manufacturers, to mapping electrical pins and inspecting fragile optical fibers, I gained a holistic view of how complex optomechatronic systems move from concept to deployed physical products.
+                This experience reinforced the absolute necessity of systems-level engineering. By owning the physical design process—from conceptualizing SolidWorks models and executing strict DFM drafting, to conducting QC on fragile optical fibers—I proved that I understand how the mechanical environment dictates the performance of the entire machine. By building robust, precisely toleranced physical foundations, I directly enabled the successful integration of our control software.
             </p>
         </div>
 
     </article>
     
-    <!--<section class="max-w-3xl mx-auto px-6 py-12 border-t border-neutral-200">
-        <h2 class="text-2xl font-semibold text-neutral-900 mb-6">Project Resources</h2>
-        
-        <!-- PENDING RESOURCES: Uncomment the block below and update href/src links when ready -->
-        <!-- 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            
-            <a href="link-to-your-pdf-drawing.pdf" target="_blank" class="group flex flex-col border border-neutral-200 rounded-xl overflow-hidden hover:border-neutral-900 hover:shadow-sm transition-all bg-white isolate">
-                <div class="relative w-full aspect-[4/3] bg-neutral-100 overflow-hidden border-b border-neutral-200 isolate ring-1 ring-inset ring-neutral-200/50">
-                    <img src="images/Custom-made Movable Laser Station.jpg" alt="Snippet of the 2D manufacturing drawing showing M6 callouts" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
-                    <div class="absolute top-3 right-3 bg-white/95 backdrop-blur text-xs font-semibold px-2 py-1 rounded shadow-sm text-neutral-700 border border-neutral-100">PDF</div>
-                </div>
-                <div class="p-5 flex flex-col flex-grow justify-between">
-                    <div>
-                        <h3 class="text-neutral-900 font-medium mb-1">Manufacturing Drawings</h3>
-                        <p class="text-sm text-neutral-500 line-clamp-2">Complete 2D CAD drafting and DFM specifications for the workstation.</p>
-                    </div>
-                </div>
-            </a>
-
-            <a href="link-to-your-slides.pdf" target="_blank" class="group flex flex-col border border-neutral-200 rounded-xl overflow-hidden hover:border-neutral-900 hover:shadow-sm transition-all bg-white isolate">
-                <div class="relative w-full aspect-[4/3] bg-neutral-100 overflow-hidden border-b border-neutral-200 isolate ring-1 ring-inset ring-neutral-200/50">
-                    <img src="images/JDU .jpeg" alt="Presentation slides showing laser parameter constraints" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
-                    <div class="absolute top-3 right-3 bg-white/95 backdrop-blur text-xs font-semibold px-2 py-1 rounded shadow-sm text-neutral-700 border border-neutral-100">PDF</div>
-                </div>
-                <div class="p-5 flex flex-col flex-grow justify-between">
-                    <div>
-                        <h3 class="text-neutral-900 font-medium mb-1">Design Thought-Flow</h3>
-                        <p class="text-sm text-neutral-500 line-clamp-2">Presentation slides outlining mechanical constraints to project stakeholders.</p>
-                    </div>
-                </div>
-            </a>
-
-        </div>
-        -->
     </section>
     
     <footer id="contact" class="border-t border-neutral-200 mt-12 bg-white">
