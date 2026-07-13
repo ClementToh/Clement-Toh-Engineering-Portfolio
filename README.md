@@ -1,6 +1,6 @@
 # Clement Toh — Engineering Portfolio
 
-Welcome to the repository for my personal engineering portfolio. This website serves as a digital showcase of my work bridging the gap between physical mechanical design and digital industrial monitoring. 
+Welcome to the repository for my personal engineering portfolio. This website serves as a digital showcase of my work bridging the gap between physical mechanical design and digital industrial instrumentation. 
 
 **Live Website:** [clementtoh.com](https://clementtoh.com)
 
@@ -9,17 +9,17 @@ Welcome to the repository for my personal engineering portfolio. This website se
 ## 👨‍🔧 About Me
 I am a Mechanical Engineering undergraduate at the National University of Singapore (NUS) and a Singapore Polytechnic Merit alumnus. 
 
-My engineering focus lies at the intersection of hardware systems and real-time data pipelines. Whether I am modeling anthropomorphic exoskeletons or integrating IIoT sensors into metal 3D printers, my goal is always to build systems that are both mechanically robust and data-driven.
+My engineering focus lies at the intersection of hardware systems and real-time data pipelines. Whether I am architecting heavy-duty optomechatronic infrastructure for Class 4 industrial lasers, building end-to-end telemetry pipelines for metal 3D printers, or optimizing the thermal dynamics of physical hardware, my goal is to build systems that are mechanically robust and highly data-driven.
 
 ## 📫 Contact
 * **Email:** [clement.toh2604@gmail.com](mailto:clement.toh2604@gmail.com)
 * **LinkedIn:** [linkedin.com/in/clement26](https://www.linkedin.com/in/clement26)
 
-## 🎯 Core Competencies:
-* **CAD & Design:** Autodesk Inventor, Fusion 360, Creo, Siemens NX, AutoCAD
-* **Programming & Data:** Python, C++, Arduino, MATLAB, Grafana, InfluxDB
-* **Manufacturing:** Additive Manufacturing (LPBF/FDM), Machining, Prototyping
-* **Engineering Tools:** Mastercam, Minitab, KNIME, NI Multisim
+## 🎯 Core Competencies
+* **CAD & Architecture:** SolidWorks, Autodesk Inventor, Siemens NX, Fusion 360
+* **Software, Networking & Scripting:** Python (Data Pipelines), C++, EPL (Ethernet POWERLINK) Network Analysis, Platform.io, InfluxDB, Grafana, MATLAB
+* **Embedded Systems & IIoT:** M5Stack FIRE IIoT, Arduino, PLCs, NI DAQ (NI-9236), Edge-Computing Telemetry, Sensor Routing
+* **Hardware & Integration:** Electro-Mechanical Troubleshooting, Precision Kinematics, Class 4 Lasers, Additive Manufacturing (LPBF/FDM), Design for Manufacturability (DFM)
 
 ## 💻 Local Development
 To run this project locally, no complex build steps or package managers are required:
@@ -31,5 +31,6 @@ This portfolio is built with a focus on clean, minimalist design and fast load t
 * **HTML5:** Semantic, accessible page structure.
 * **Tailwind CSS:** Utility-first styling via CDN for a modern, responsive layout.
 * **Vanilla CSS:** Custom keyframe animations for smooth, staged component rendering.
+
 ---
 *Designed and developed by Clement Toh, 2026.*
