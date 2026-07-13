@@ -1,19 +1,24 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<!DOCTYPE html> 
+<html lang="en" class="scroll-smooth scroll-pt-24"> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Clement Toh</title>
-
+    <!-- SEO and Social Sharing Meta Tags -->
+    <meta name="description" content="Mechanical Engineering undergraduate specializing in mechatronics, advanced manufacturing, and IIoT instrumentation. Available for 2027 US Co-Ops.">
+    <meta property="og:title" content="Clement Toh | Hardware & Systems Integration">
+    <meta property="og:description" content="Mechanical Engineering undergraduate specializing in mechatronics, advanced manufacturing, and IIoT instrumentation.">
+    <meta property="og:image" content="https://yourwebsite.com/images/profilephoto.jpg"> <!-- Ensure you put your actual live domain here -->
+    <meta property="og:type" content="website">
     <link rel="icon" type="image/png" href="images/CT32x32.png">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
         body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
-<body class="bg-white text-neutral-900 antialiased">
+<body id="top" class="bg-white text-neutral-900 antialiased selection:bg-black selection:text-white">
 
     <!-- Navigation -->
     <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-neutral-200">
@@ -35,7 +40,7 @@
     </nav>
 
     <!-- Main Content -->
-    <main id="top" class="max-w-4xl mx-auto px-6 pt-32 pb-24">
+    <main class="max-w-4xl mx-auto px-6 pt-32 pb-24">
         
         <!-- Top Section: Centered Profile -->
         <div class="flex flex-col items-center text-center max-w-2xl mx-auto">
@@ -57,24 +62,33 @@
                     I am a Mechanical Engineering undergraduate at the National University of Singapore (NUS), specializing in the intersection of high-precision hardware and real-time industrial data.
                 </p>
                 <p>
-                    Currently, I engineer advanced motion and vision control platforms for laser micro-processing at JD Union. I focus on integrating hardware and software—like galvanometer scanners and motion stages—to optimize industrial 3D printing.
+                    Currently, I engineer advanced motion and vision control platforms for laser micro-processing at <a href="project-jd-union.html" class="text-blue-600 underline hover:text-blue-800 transition-colors"><strong>JD Union</strong></a>. I focus on integrating hardware and software—like galvanometer scanners and motion stages—to optimize industrial 3D printing.
                 </p>
                 <p>
                     Previously, I built end-to-end telemetry pipelines for A*STAR (ARTC) to monitor metal 3D printers using InfluxDB and Grafana. Whether I am designing joint mechanisms for exoskeletons or routing custom IIoT sensor instrumentation, my goal is to build systems that are mechanically robust and highly data-driven.
                 </p>
             </div>
 
-            <!-- Block Buttons -->
-            <div class="flex flex-wrap justify-center gap-4 mt-10">
+            <!-- Block Buttons - FIXED SIZING FOR MOBILE -->
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mt-10 w-full">
                 <a href="https://www.linkedin.com/in/clement26" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto flex justify-center items-center gap-1.5 px-6 py-3 bg-white text-neutral-900 border border-neutral-200 text-sm font-medium rounded-lg hover:bg-neutral-50 transition-colors shrink-0">
-                        LinkedIn
+                    LinkedIn
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 text-neutral-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
                 </a>
-                <a href="assets/Clement_Toh_US_Hardware_Engineering_2027.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-2.5 bg-[#222222] text-white text-sm font-medium rounded-lg hover:bg-black transition-colors">
+                <a href="assets/Clement_Toh_US_Hardware_Engineering_2027.pdf" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto flex justify-center items-center gap-2 px-6 py-3 bg-[#222222] text-white text-sm font-medium rounded-lg hover:bg-black transition-colors shadow-sm shrink-0">
                     Resume
                     <!-- Download Icon SVG -->
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                 </a>
+            </div>
+            
+            <!-- Click to copy email trick -->
+            <div class="mt-4 flex flex-col items-center">
+                <button onclick="navigator.clipboard.writeText('clement.toh2604@gmail.com'); document.getElementById('copy-toast-bio').classList.remove('opacity-0'); setTimeout(() => document.getElementById('copy-toast-bio').classList.add('opacity-0'), 2000);" class="text-xs text-neutral-500 hover:text-neutral-800 transition-colors flex items-center gap-1.5 cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                    clement.toh2604@gmail.com (Click to copy)
+                </button>
+                <span id="copy-toast-bio" class="text-xs text-emerald-600 font-medium mt-1 opacity-0 transition-opacity duration-300">Email copied to clipboard!</span>
             </div>
 
         </div>
@@ -156,11 +170,13 @@
                     
                     <!-- Added Buttons Matching the US Co-Op Dossier Style -->
                     <div class="flex flex-col sm:flex-row gap-3 mt-6">
-                        <a href="assets/Clement_Toh_National Service Certificate of Service.pdf" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto text-center px-6 py-3 bg-[#222222] text-white text-sm font-medium rounded-lg hover:bg-black transition-colors shadow-sm">
+                        <a href="assets/Clement_Toh_National Service Certificate of Service.pdf" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto flex justify-center items-center gap-1.5 px-6 py-3 bg-white text-neutral-900 border border-neutral-200 text-sm font-medium rounded-lg hover:bg-neutral-50 transition-colors shadow-sm shrink-0">
                             Certificate of Service
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 text-neutral-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
                         </a>
-                        <a href="assets/Clement_Toh_National Service Testimonial.pdf" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto text-center px-6 py-3 bg-[#222222] text-white text-sm font-medium rounded-lg hover:bg-black transition-colors shadow-sm">
+                        <a href="assets/Clement_Toh_National Service Testimonial.pdf" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto flex justify-center items-center gap-1.5 px-6 py-3 bg-white text-neutral-900 border border-neutral-200 text-sm font-medium rounded-lg hover:bg-neutral-50 transition-colors shadow-sm shrink-0">
                             Commander's Testimonial
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 text-neutral-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
                         </a>
                     </div>
 
@@ -186,8 +202,9 @@
                             <h4 class="text-sm font-semibold text-neutral-900">Dr. Zheng Jie TAN</h4>
                             <p class="text-xs text-neutral-500 mt-0.5">Senior Scientist II, ARTC (A*STAR)</p>
                         </div>
-                        <a href="assets/Clement_Toh_ARTC Testimonial.pdf" target="_blank" rel="noopener noreferrer" class="inline-block px-4 py-2 bg-[#222222] text-white text-sm font-medium rounded-lg hover:bg-black transition-colors w-fit text-center">
+                        <a href="assets/Clement_Toh_ARTC Testimonial.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex justify-center items-center gap-1.5 px-4 py-2 bg-[#222222] text-white text-sm font-medium rounded-lg hover:bg-black transition-colors w-full sm:w-fit">
                             View Full Letter
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                         </a>
                     </div>
                 </div>
@@ -202,8 +219,9 @@
                             <h4 class="text-sm font-semibold text-neutral-900">Dr. CHONG Chee Wei</h4>
                             <p class="text-xs text-neutral-500 mt-0.5">Director, School of Mechanical & Aeronautical Engineering, Singapore Polytechnic</p>
                         </div>
-                        <a href="assets/Clement_Toh_SP Testimonial.pdf" target="_blank" rel="noopener noreferrer" class="inline-block px-4 py-2 bg-[#222222] text-white text-sm font-medium rounded-lg hover:bg-black transition-colors w-fit text-center">
+                        <a href="assets/Clement_Toh_SP Testimonial.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex justify-center items-center gap-1.5 px-4 py-2 bg-[#222222] text-white text-sm font-medium rounded-lg hover:bg-black transition-colors w-full sm:w-fit">
                             View Full Letter
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                         </a>
                     </div>
                 </div>
@@ -219,8 +237,9 @@
                     <h4 class="text-base font-semibold text-neutral-900">School of Mechanical & Aeronautical Engineering Book Prize</h4>
                     <p class="text-sm text-neutral-500 mt-1">Singapore Polytechnic</p>
                     <p class="text-sm text-neutral-600 mt-2 leading-relaxed">Top in Cohort for Module - Communicating For Personal And Team Effectiveness.</p>
-                    <a href="assets/Clement_Toh_SP Book Prize.pdf" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 px-4 py-2 bg-[#222222] text-white text-sm font-medium rounded-lg hover:bg-black transition-colors">
+                    <a href="assets/Clement_Toh_SP Book Prize.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex justify-center items-center gap-1.5 mt-4 px-4 py-2 bg-white text-neutral-900 border border-neutral-200 text-sm font-medium rounded-lg hover:bg-neutral-50 transition-colors w-full sm:w-auto shadow-sm">
                         Certificate PDF
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 text-neutral-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
                     </a>   
                 </div>
                 <div class="text-sm text-neutral-400 shrink-0 md:text-right mt-2 md:mt-0">
@@ -233,8 +252,9 @@
                     <h4 class="text-base font-semibold text-neutral-900">Certificate of Recognition: MAE Buddy Programme</h4>
                     <p class="text-sm text-neutral-500 mt-1">Singapore Polytechnic</p>
                     <p class="text-sm text-neutral-600 mt-2 leading-relaxed">Served as a peer mentor within the School of Mechanical and Aeronautical Engineering to guide and support fellow students.</p>
-                    <a href="assets/Clement_Toh_SP MAE Buddy Programme.pdf" rel="noopener noreferrer" class="inline-block mt-4 px-4 py-2 bg-[#222222] text-white text-sm font-medium rounded-lg hover:bg-black transition-colors">
+                    <a href="assets/Clement_Toh_SP MAE Buddy Programme.pdf" rel="noopener noreferrer" target="_blank" class="inline-flex justify-center items-center gap-1.5 mt-4 px-4 py-2 bg-white text-neutral-900 border border-neutral-200 text-sm font-medium rounded-lg hover:bg-neutral-50 transition-colors w-full sm:w-auto shadow-sm">
                         Certificate PDF
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 text-neutral-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
                     </a>
                 </div>
                 <div class="text-sm text-neutral-400 shrink-0 md:text-right mt-2 md:mt-0">
@@ -255,8 +275,9 @@
                     <p class="text-sm text-neutral-600 mt-2 leading-relaxed">
                         Selected for an exclusive 8-month development program. Gained strategic industry insights and a widened business worldview under the direct mentorship of <a href="https://www.linkedin.com/in/kaulsanjay/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors">Sanjay Kaul</a> (President-APAC & Japan, Cisco Systems) and <a href="https://www.linkedin.com/in/mehak-dua-1458254/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors">Mehak Dua</a> (Client Coverage, GMO).
                     </p>
-                    <a href="assets/Clement_Toh_Harvard Business School Certificate.pdf" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 px-4 py-2 bg-[#222222] text-white text-sm font-medium rounded-lg hover:bg-black transition-colors">
+                    <a href="assets/Clement_Toh_Harvard Business School Certificate.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex justify-center items-center gap-1.5 mt-4 px-4 py-2 bg-white text-neutral-900 border border-neutral-200 text-sm font-medium rounded-lg hover:bg-neutral-50 transition-colors w-full sm:w-auto shadow-sm">
                         Certificate PDF
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 text-neutral-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
                     </a>
                 </div>
                 <div class="text-sm text-neutral-400 shrink-0 md:text-right mt-1">
@@ -272,8 +293,9 @@
                     <p class="text-sm text-neutral-600 mt-2 leading-relaxed">
                         Completed a 6-month intensive program bridging academic theory and industry practice to master the fundamentals of building scalable, successful business ventures.
                     </p>
-                    <a href="assets/Clement_Toh_The Zero To One Entrepreneurship Program (NUS Business School and Meet Ventures).pdf" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 px-4 py-2 bg-[#222222] text-white text-sm font-medium rounded-lg hover:bg-black transition-colors">
+                    <a href="assets/Clement_Toh_The Zero To One Entrepreneurship Program (NUS Business School and Meet Ventures).pdf" target="_blank" rel="noopener noreferrer" class="inline-flex justify-center items-center gap-1.5 mt-4 px-4 py-2 bg-white text-neutral-900 border border-neutral-200 text-sm font-medium rounded-lg hover:bg-neutral-50 transition-colors w-full sm:w-auto shadow-sm">
                         Certificate PDF
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 text-neutral-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
                     </a>
                 </div>
                 <div class="text-sm text-neutral-400 shrink-0 md:text-right mt-1">
@@ -289,8 +311,9 @@
                     <p class="text-sm text-neutral-600 mt-2 leading-relaxed">
                         Organized and directed online academic support programs for underprivileged students, coordinating 20 volunteer educators and supervising over 20 concurrent breakout tutoring sessions.
                     </p>
-                    <a href="assets/Clement_Toh_Certificate of Appointment_Boon Lay Youth Network.pdf" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 px-4 py-2 bg-[#222222] text-white text-sm font-medium rounded-lg hover:bg-black transition-colors">
+                    <a href="assets/Clement_Toh_Certificate of Appointment_Boon Lay Youth Network.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex justify-center items-center gap-1.5 mt-4 px-4 py-2 bg-white text-neutral-900 border border-neutral-200 text-sm font-medium rounded-lg hover:bg-neutral-50 transition-colors w-full sm:w-auto shadow-sm">
                         Certificate PDF
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 text-neutral-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
                     </a>
                 </div>
                 <div class="text-sm text-neutral-400 shrink-0 md:text-right mt-1">
@@ -306,8 +329,9 @@
                 <div class="max-w-xl">
                     <h4 class="text-base font-semibold text-neutral-900">Build Your Own Internet of Things</h4>
                     <p class="text-sm text-neutral-500 mt-1">Singapore Polytechnic</p>
-                    <a href="assets/Clement_Toh_Build Your Own Internet of Things Certification.pdf" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 px-4 py-2 bg-[#222222] text-white text-sm font-medium rounded-lg hover:bg-black transition-colors">
+                    <a href="assets/Clement_Toh_Build Your Own Internet of Things Certification.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex justify-center items-center gap-1.5 mt-4 px-4 py-2 bg-white text-neutral-900 border border-neutral-200 text-sm font-medium rounded-lg hover:bg-neutral-50 transition-colors w-full sm:w-auto shadow-sm">
                         Certificate PDF
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 text-neutral-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
                     </a>
                 </div>
                 <div class="text-sm text-neutral-400 shrink-0 md:text-right mt-1">
