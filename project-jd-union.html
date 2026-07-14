@@ -8,6 +8,8 @@
     <link rel="icon" type="image/png" href="images/CT32x32.png">
     
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- NEW: Google Model Viewer Script -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
         body { font-family: 'Inter', sans-serif; }
@@ -20,7 +22,6 @@
             <a href="index.html#top" class="font-semibold text-base md:text-lg tracking-tight text-neutral-900 shrink-0 hover:opacity-70 transition-opacity">Clement.Builds</a>
             <div class="flex items-center gap-3 md:gap-6 text-xs md:text-sm font-medium text-neutral-500">
                 
-                <!-- Updated Projects Link -->
                 <a href="index.html#projects" class="hover:text-neutral-900 transition-colors whitespace-nowrap">
                     ← <span class="hidden sm:inline">Back to </span>Projects
                 </a>
@@ -89,10 +90,26 @@
             </ul>
 
             <div class="flex flex-col gap-6 mb-12">
-                <div class="rounded-xl overflow-hidden bg-neutral-100 border border-neutral-200 flex flex-col isolate ring-1 ring-inset ring-neutral-200/50">
-                    <img src="images/Assembly Annotated.png" alt="Detailed 3D assembly and dimensioned render of the custom laser workstation" class="w-full h-auto block">
+                <div class="rounded-xl overflow-hidden bg-neutral-100 border border-neutral-200 flex flex-col isolate ring-1 ring-inset ring-neutral-200/50 shadow-sm">
+                    
+                    <!-- NEW: Interactive 3D Model Viewer -->
+                    <div class="relative w-full aspect-[4/3] bg-neutral-50 cursor-grab active:cursor-grabbing">
+                        <model-viewer src="assets/movable_laser_station.glb"
+                                      alt="Interactive 3D CAD model of custom movable laser workstation"
+                                      auto-rotate
+                                      camera-controls
+                                      shadow-intensity="1"
+                                      interaction-prompt="auto"
+                                      class="w-full h-full outline-none focus:outline-none">
+                        </model-viewer>
+                        <!-- Visual Badge -->
+                        <div class="absolute top-3 right-3 bg-white/90 backdrop-blur text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded shadow-sm text-neutral-700 border border-neutral-200 pointer-events-none">
+                            Interactive 3D
+                        </div>
+                    </div>
+                    
                     <div class="p-4 bg-white border-t border-neutral-200">
-                        <p class="text-xs text-neutral-500 leading-relaxed">Mechanical Architecture: Isometric render of the 5-tier workstation, designed with strict clearances for IPG laser hardware and constructed from 4040 aluminum profiles for maximum rigidity.</p>
+                        <p class="text-xs text-neutral-500 leading-relaxed"><strong class="text-neutral-700">Interactive Mechanical Architecture:</strong> 5-tier workstation designed with strict clearances for IPG laser hardware and constructed from 4040 aluminum profiles for maximum rigidity. <em class="text-neutral-400 block mt-1">Drag to rotate, scroll to zoom.</em></p>
                     </div>
                 </div>
             </div>
@@ -161,16 +178,29 @@
             <p class="text-neutral-700 mb-8 max-w-lg mx-auto text-base leading-relaxed">
                 I am currently seeking a 7-month US Hardware Engineering Co-Op (Jan - Aug 2027). If your team needs someone who bridges mechanical design with systems integration, let's connect.
             </p>
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a href="mailto:clement.toh2604@gmail.com" class="w-full sm:w-auto inline-flex justify-center items-center px-8 py-3 bg-[#222222] text-white text-sm font-medium rounded-lg hover:bg-black transition-colors shadow-sm">
-                    Let's Talk
-                </a>
+            
+            <div class="flex flex-col gap-3">
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <a href="mailto:clement.toh2604@gmail.com" class="w-full sm:w-auto inline-flex justify-center items-center px-8 py-3 bg-[#222222] text-white text-sm font-medium rounded-lg hover:bg-black transition-colors shadow-sm">
+                        Let's Talk
+                    </a>
+                    
+                    <a href="assets/Clement_Toh_US_Hardware_Engineering_2027.pdf" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex justify-center items-center gap-2 px-8 py-3 bg-white text-neutral-900 border border-neutral-200 text-sm font-medium rounded-lg hover:bg-neutral-50 transition-colors shadow-sm shrink-0">
+                        Resume
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    </a>
+                </div>
                 
-                <a href="assets/Clement_Toh_US_Hardware_Engineering_2027.pdf" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex justify-center items-center gap-2 px-8 py-3 bg-white text-neutral-900 border border-neutral-200 text-sm font-medium rounded-lg hover:bg-neutral-50 transition-colors shadow-sm shrink-0">
-                    Resume
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                </a>
+                <!-- NEW: Click to copy email trick -->
+                <div class="mt-2 flex flex-col items-center justify-center">
+                    <button onclick="navigator.clipboard.writeText('clement.toh2604@gmail.com'); document.getElementById('copy-toast-jdu').classList.remove('opacity-0'); setTimeout(() => document.getElementById('copy-toast-jdu').classList.add('opacity-0'), 2000);" class="text-xs text-neutral-500 hover:text-neutral-800 transition-colors flex items-center gap-1.5 cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        clement.toh2604@gmail.com (Click to copy)
+                    </button>
+                    <span id="copy-toast-jdu" class="text-xs text-emerald-600 font-medium mt-1 opacity-0 transition-opacity duration-300">Email copied to clipboard!</span>
+                </div>
             </div>
+
         </div>
     </section>
     
@@ -178,9 +208,8 @@
         <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-neutral-500">
             <p>© Clement TOH - 2026</p>
             <div class="flex items-center gap-6">
-                <a href="#projects" class="hover:text-neutral-900 transition-colors">Projects</a>
+                <a href="index.html#projects" class="hover:text-neutral-900 transition-colors">Projects</a>
                 <a href="about.html" class="hover:text-neutral-900 transition-colors">About</a>
-                <!-- CHANGED FOOTER CONTACT TO RESUME TEXT LINK -->
                 <a href="assets/Clement_Toh_US_Hardware_Engineering_2027.pdf" target="_blank" rel="noopener noreferrer" class="hover:text-neutral-900 transition-colors">Resume</a>
             </div>
         </div>
