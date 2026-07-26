@@ -31,6 +31,7 @@
             <a href="index.html#top" class="font-semibold text-base md:text-lg tracking-tight text-neutral-900 shrink-0 hover:opacity-70 transition-opacity">Clement.Builds</a>
             <div class="flex items-center gap-3 md:gap-6 text-xs md:text-sm font-medium text-neutral-500">
                 
+                <!-- Updated Projects Link -->
                 <a href="index.html#projects" class="hover:text-neutral-900 transition-colors whitespace-nowrap">
                     ← <span class="hidden sm:inline">Back to </span>Projects
                 </a>
@@ -90,7 +91,8 @@
                 To mitigate thermal inconsistencies that frequently affect print quality—and to drastically reduce the machine's acoustic footprint—I performed a full overhaul of the cooling system.
             </p>
             <ul class="list-disc pl-6 space-y-2 mb-6">
-                <li><strong>Hotend Cooling Integration:</strong> Replaced the excessively loud stock 20mm hotend fan with a high-efficiency Noctua 40mm fan. This was achieved using solderless Scotchlok splices to connect the original 2-pin connector to a Noctua Omnijoin adapter, followed by executing Auto-PID tuning to recalibrate the thermal profiles for the new cooling dynamics.</li>
+                <!-- REMOVED NOCTUA DETAILS -->
+                <li><strong>Hotend Cooling Integration:</strong> Replaced the excessively loud stock 20mm hotend fan with a high-efficiency alternative, executing Auto-PID tuning to recalibrate the thermal profiles for the new cooling dynamics and significantly reducing ambient noise during operations.</li>
                 <li><strong>Part Cooling Upgrades:</strong> Replaced stock part-cooling components with high-performance <strong>WINSINN 5015 blowers</strong> and <strong>4010 cooling fans</strong>.</li>
                 <li><strong>Custom Ducting:</strong> Designed a custom, 3D-printed print-head shroud using Fusion 360 to optimize laminar airflow over the hotend, ensuring rapid filament solidification and minimizing warping in complex geometries.</li>
             </ul>
@@ -110,11 +112,11 @@
                 </div>
             </div>
 
-            <!-- New Noctua Image Card -->
+            <!-- FIXED PATH: Added images/ -->
             <div class="rounded-xl overflow-hidden bg-white border border-neutral-200 flex flex-col isolate ring-1 ring-inset ring-neutral-200/50 mb-12">
-                <img src="head.jpg" alt="Noctua hotend fan wiring integration" class="w-full h-auto object-cover max-h-96">
+                <img src="images/head.jpg" alt="Hotend fan wiring integration" class="w-full h-auto object-cover max-h-96">
                 <div class="p-4 bg-white border-t border-neutral-200 flex-grow">
-                    <p class="text-xs text-neutral-500 leading-relaxed">Acoustic Optimization: Solderless wiring integration of the Noctua 40mm fan, significantly reducing ambient noise levels during hotend operation.</p>
+                    <p class="text-xs text-neutral-500 leading-relaxed">Acoustic Optimization: Wiring integration of the high-efficiency hotend fan, significantly reducing ambient noise levels during operation.</p>
                 </div>
             </div>
 
@@ -131,9 +133,9 @@
                 <li><strong>Enhanced Durability:</strong> The PEI surface easily handles higher temperatures and aggressively resists nozzle scratching compared to stock surfaces.</li>
             </ul>
 
-            <!-- New PEI Print Image Card -->
+            <!-- FIXED PATH: Added images/ -->
             <div class="rounded-xl overflow-hidden bg-white border border-neutral-200 flex flex-col isolate ring-1 ring-inset ring-neutral-200/50 mb-12">
-                <img src="print.jpg" alt="3D printing on textured PEI bed" class="w-full h-auto object-cover max-h-96">
+                <img src="images/print.jpg" alt="3D printing on textured PEI bed" class="w-full h-auto object-cover max-h-96">
                 <div class="p-4 bg-white border-t border-neutral-200 flex-grow">
                     <p class="text-xs text-neutral-500 leading-relaxed">PEI Integration: Printing a large, continuous circular prototype directly onto the textured PEI plate, demonstrating flawless first-layer adhesion without secondary adhesives.</p>
                 </div>
@@ -147,9 +149,9 @@
             </p>
 
             <div class="flex flex-col md:flex-row gap-8 mb-12 items-center">
-                <!-- New Cone Benchmarking Image -->
+                <!-- FIXED PATH: Added images/ -->
                 <div class="w-full md:w-1/2 rounded-xl overflow-hidden bg-white border border-neutral-200 flex flex-col isolate ring-1 ring-inset ring-neutral-200/50 shrink-0">
-                    <img src="cone.jpg" alt="3D printer completing the Cone Pin Challenge" class="w-full h-auto object-cover">
+                    <img src="images/cone.jpg" alt="3D printer completing the Cone Pin Challenge" class="w-full h-auto object-cover">
                     <div class="p-4 bg-white border-t border-neutral-200 flex-grow">
                         <p class="text-xs text-neutral-500 leading-relaxed">Extreme Limits Testing: A successful completion of the unsupported Cone Pin Challenge, validating the upgraded hardware.</p>
                     </div>
