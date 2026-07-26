@@ -31,7 +31,6 @@
             <a href="index.html#top" class="font-semibold text-base md:text-lg tracking-tight text-neutral-900 shrink-0 hover:opacity-70 transition-opacity">Clement.Builds</a>
             <div class="flex items-center gap-3 md:gap-6 text-xs md:text-sm font-medium text-neutral-500">
                 
-                <!-- Updated Projects Link -->
                 <a href="index.html#projects" class="hover:text-neutral-900 transition-colors whitespace-nowrap">
                     ← <span class="hidden sm:inline">Back to </span>Projects
                 </a>
@@ -70,7 +69,6 @@
         </div>
     </header>
 
-    <!-- CHANGED: max-w-6xl changed to max-w-3xl. Image changed to w-full h-auto. -->
     <section class="max-w-3xl mx-auto px-6 pb-16">
         <div class="relative w-full rounded-2xl overflow-hidden bg-white border border-neutral-200 shadow-sm ring-1 ring-inset ring-neutral-200/50 flex justify-center">
             <img src="images/3D Printer Thermal & Hardware Optimization.png" alt="Ender 3 V3 SE printing on textured PEI bed" class="w-full h-auto block rounded-2xl">
@@ -87,47 +85,92 @@
         </div>
 
         <div>
-            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Thermal & Airflow Redesign</h2>
+            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Acoustic & Airflow Redesign</h2>
             <p class="mb-4">
-                To mitigate thermal inconsistencies that frequently affect print quality, I performed a full overhaul of the cooling system.
+                To mitigate thermal inconsistencies that frequently affect print quality—and to drastically reduce the machine's acoustic footprint—I performed a full overhaul of the cooling system.
             </p>
             <ul class="list-disc pl-6 space-y-2 mb-6">
-                <li>Replaced stock cooling components with high-performance <strong>WINSINN 5015 blowers</strong> and <strong>4010 cooling fans</strong>.</li>
-                <li>Designed a custom, 3D-printed print-head shroud using Fusion 360 to optimize laminar airflow over the hotend, ensuring rapid filament solidification and minimizing warping in complex geometries.</li>
+                <li><strong>Hotend Cooling Integration:</strong> Replaced the excessively loud stock 20mm hotend fan with a high-efficiency Noctua 40mm fan. This was achieved using solderless Scotchlok splices to connect the original 2-pin connector to a Noctua Omnijoin adapter, followed by executing Auto-PID tuning to recalibrate the thermal profiles for the new cooling dynamics.</li>
+                <li><strong>Part Cooling Upgrades:</strong> Replaced stock part-cooling components with high-performance <strong>WINSINN 5015 blowers</strong> and <strong>4010 cooling fans</strong>.</li>
+                <li><strong>Custom Ducting:</strong> Designed a custom, 3D-printed print-head shroud using Fusion 360 to optimize laminar airflow over the hotend, ensuring rapid filament solidification and minimizing warping in complex geometries.</li>
             </ul>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div class="rounded-xl overflow-hidden bg-white border border-neutral-200 flex flex-col isolate ring-1 ring-inset ring-neutral-200/50">
                     <img src="images/Ender 3v3se WINSINN 5015 blowers.jpg" alt="WINSINN 5015 blower fan" class="w-full aspect-[4/3] object-contain p-4">
                     <div class="p-4 bg-white border-t border-neutral-200 flex-grow">
-                        <p class="text-xs text-neutral-500 leading-relaxed">WINSINN 5015 blowers</p>
+                        <p class="text-xs text-neutral-500 leading-relaxed">WINSINN 5015 blowers for rapid part cooling.</p>
                     </div>
                 </div>
                 <div class="rounded-xl overflow-hidden bg-white border border-neutral-200 flex flex-col isolate ring-1 ring-inset ring-neutral-200/50">
                     <img src="images/Ender 3v3se WINSINN 4010 cooling fans.jpg" alt="WINSINN 4010 cooling fan" class="w-full aspect-[4/3] object-contain p-4">
                     <div class="p-4 bg-white border-t border-neutral-200 flex-grow">
-                        <p class="text-xs text-neutral-500 leading-relaxed">4010 cooling fans</p>
+                        <p class="text-xs text-neutral-500 leading-relaxed">WINSINN 4010 cooling fans.</p>
                     </div>
+                </div>
+            </div>
+
+            <!-- New Noctua Image Card -->
+            <div class="rounded-xl overflow-hidden bg-white border border-neutral-200 flex flex-col isolate ring-1 ring-inset ring-neutral-200/50 mb-12">
+                <img src="head.jpg" alt="Noctua hotend fan wiring integration" class="w-full h-auto object-cover max-h-96">
+                <div class="p-4 bg-white border-t border-neutral-200 flex-grow">
+                    <p class="text-xs text-neutral-500 leading-relaxed">Acoustic Optimization: Solderless wiring integration of the Noctua 40mm fan, significantly reducing ambient noise levels during hotend operation.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div>
+            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Build Surface Optimization</h2>
+            <p class="mb-4">
+                Beyond thermal management, I focused on improving the mechanical integrity and material compatibility of the printer by replacing the stock PC (polycarbonate) sticker sheet with a <strong>textured PEI spring steel sheet</strong>.
+            </p>
+            <ul class="list-disc pl-6 space-y-2 mb-6">
+                <li><strong>Optimized Thermal Adhesion:</strong> Plastics like PLA and PETG firmly stick to the textured surface at high temperatures without the need for messy glues or hairspray, preventing warping.</li>
+                <li><strong>Effortless Part Release:</strong> When the bed cools, prints naturally pop off, or can be instantly removed by slightly flexing the steel sheet.</li>
+                <li><strong>Enhanced Durability:</strong> The PEI surface easily handles higher temperatures and aggressively resists nozzle scratching compared to stock surfaces.</li>
+            </ul>
+
+            <!-- New PEI Print Image Card -->
+            <div class="rounded-xl overflow-hidden bg-white border border-neutral-200 flex flex-col isolate ring-1 ring-inset ring-neutral-200/50 mb-12">
+                <img src="print.jpg" alt="3D printing on textured PEI bed" class="w-full h-auto object-cover max-h-96">
+                <div class="p-4 bg-white border-t border-neutral-200 flex-grow">
+                    <p class="text-xs text-neutral-500 leading-relaxed">PEI Integration: Printing a large, continuous circular prototype directly onto the textured PEI plate, demonstrating flawless first-layer adhesion without secondary adhesives.</p>
                 </div>
             </div>
         </div>
 
         <div>
-            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Hardware & Precision Calibration</h2>
+            <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Validation Benchmarking</h2>
             <p class="mb-4">
-                Beyond thermal management, I focused on improving the mechanical integrity and material compatibility of the printer.
+                To validate the success of the thermal, cooling, and mechanical upgrades, I ran the machine through the rigorous "Cone Pin Challenge." This benchmark pushes the slicer and machine capabilities to their absolute limits by printing a highly unstable geometry entirely without structural supports.
             </p>
-            <ul class="list-disc pl-6 space-y-2 mb-6">
-                <li>Upgraded the print bed to a <strong>textured PEI spring steel sheet</strong>, significantly improving first-layer adhesion and part removal reliability.</li>
-                <li>Installed <strong>hardened brass nozzles</strong> to allow for the use of more abrasive, durable filaments.</li>
-                <li>Implemented <strong>anti-vibration damping pads</strong> to reduce mechanical resonance during high-speed printing, resulting in cleaner surface finishes.</li>
-            </ul>
+
+            <div class="flex flex-col md:flex-row gap-8 mb-12 items-center">
+                <!-- New Cone Benchmarking Image -->
+                <div class="w-full md:w-1/2 rounded-xl overflow-hidden bg-white border border-neutral-200 flex flex-col isolate ring-1 ring-inset ring-neutral-200/50 shrink-0">
+                    <img src="cone.jpg" alt="3D printer completing the Cone Pin Challenge" class="w-full h-auto object-cover">
+                    <div class="p-4 bg-white border-t border-neutral-200 flex-grow">
+                        <p class="text-xs text-neutral-500 leading-relaxed">Extreme Limits Testing: A successful completion of the unsupported Cone Pin Challenge, validating the upgraded hardware.</p>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-1/2">
+                    <p class="mb-4 font-medium text-neutral-900">This specific benchmark evaluates four critical performance metrics:</p>
+                    <ul class="list-disc pl-6 space-y-3">
+                        <li><strong>Bed Adhesion:</strong> The entire model relies on a remarkably small circular base remaining firmly stuck to the PEI plate despite the leverage created by the print head above it.</li>
+                        <li><strong>Z-Axis & Extrusion Stability:</strong> The long, ultra-thin stem proves precise layer alignment, excellent vibration control, and perfectly consistent filament flow.</li>
+                        <li><strong>Part Cooling & Retraction:</strong> The top cone verifies that the upgraded WINSINN fans provide rapid layer cooling to maintain the widening shape, alongside clean retraction settings to avoid stringing.</li>
+                        <li><strong>Extreme Overhangs:</strong> The steep upward-flaring walls test the printer's ability to lay down outer perimeters over thin air without sagging or catastrophic collapse.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
         <div>
             <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Functional Prototyping</h2>
             <p class="mb-4">
-                The primary objective of these optimizations was to reliably manufacture functional, load-bearing components. 
+                With the machine fully calibrated and validated, it serves as a highly reliable tool for manufacturing load-bearing, functional components. 
             </p>
             <ul class="list-disc pl-6 space-y-2">
                 <li><strong>Utility Hardware:</strong> Designed and manufactured a custom power bank holder with precision-engineered tolerance fits.</li>
@@ -157,7 +200,6 @@
                     </a>
                 </div>
                 
-                <!-- CHANGED: Wrapped email in span with text-blue-600 font-medium class -->
                 <div class="mt-2 flex flex-col items-center justify-center">
                     <button onclick="navigator.clipboard.writeText('clement.toh2604@gmail.com'); document.getElementById('copy-toast-3d').classList.remove('opacity-0'); setTimeout(() => document.getElementById('copy-toast-3d').classList.add('opacity-0'), 2000);" class="text-xs text-neutral-500 hover:text-neutral-800 transition-colors flex items-center gap-1.5 cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
@@ -174,9 +216,8 @@
         <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-neutral-500">
             <p>© Clement TOH - 2026</p>
             <div class="flex items-center gap-6">
-                <a href="#projects" class="hover:text-neutral-900 transition-colors">Projects</a>
+                <a href="index.html#projects" class="hover:text-neutral-900 transition-colors">Projects</a>
                 <a href="about.html" class="hover:text-neutral-900 transition-colors">About</a>
-                <!-- CHANGED FOOTER CONTACT TO RESUME TEXT LINK -->
                 <a href="assets/Clement_Toh_US_Hardware_Engineering_2027.pdf" target="_blank" rel="noopener noreferrer" class="hover:text-neutral-900 transition-colors">Resume</a>
             </div>
         </div>
