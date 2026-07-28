@@ -16,21 +16,10 @@ My engineering focus lies at the intersection of hardware systems and real-time 
 * **LinkedIn:** [linkedin.com/in/clement26](https://www.linkedin.com/in/clement26)
 
 ## 🎯 Core Competencies
-* **CAD & Architecture:** SolidWorks, Autodesk Inventor, Siemens NX, Fusion 360
-* **Software, Networking & Scripting:** Python (Data Pipelines), C++, EPL (Ethernet POWERLINK) Network Analysis, Platform.io, InfluxDB, Grafana, MATLAB
-* **Embedded Systems & IIoT:** M5Stack FIRE IIoT, Arduino, PLCs, NI DAQ (NI-9236), Edge-Computing Telemetry, Sensor Routing
-* **Hardware & Integration:** Electro-Mechanical Troubleshooting, Precision Kinematics, Class 4 Lasers, Additive Manufacturing (LPBF/FDM), Design for Manufacturability (DFM)
-
-## 💻 Local Development
-To run this project locally, no complex build steps or package managers are required:
-1. Clone the repository: `git clone https://github.com/clement26/clement26.github.io.git`
-2. Open `index.html` in your preferred web browser.
-
-## 🛠️ Tech Stack
-This portfolio is built with a focus on clean, minimalist design and fast load times, completely bypassing heavy frameworks.
-* **HTML5:** Semantic, accessible page structure.
-* **Tailwind CSS:** Utility-first styling via CDN for a modern, responsive layout.
-* **Vanilla CSS:** Custom keyframe animations for smooth, staged component rendering.
+* **CAD & Manufacturing:** SolidWorks, Siemens NX, Autodesk Inventor, Fusion 360, DFM, BOM, Additive Manufacturing (LPBF & FDM)
+* **Systems Integration & Embedded:** M5Stack/ IIoT Edge Devices, Arduino, PLCs, EPL (Ethernet POWERLINK) Network Analysis, Electro-Mechanical Troubleshooting, Hardware – Software Integration
+* **Data & Software:** Python (Test Automation, Data Pipelines), C++, InfluxDB, Grafana, MATLAB, PlatformIO, GitLab
+* **Test, Validation & Instrumentation:** EVT, Root Cause Analysis, NI DAQ (NI-9236), Oscilloscopes, Strain Gauges, Acoustic Emission Sensors, Optical QC, Class 4 Laser Safety & QC
 
 ---
-*Designed and developed by Clement Toh, 2026.*
+*Developed by Clement Toh, 2026.*
