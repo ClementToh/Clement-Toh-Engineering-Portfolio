@@ -1,386 +1,1059 @@
-<!DOCTYPE html> 
-<html lang="en" class="scroll-smooth">  
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Primary Meta Tags -->
     <title>About | Clement Toh</title>
-    <meta name="title" content="About | Clement Toh" />
-    <meta name="description" content="Mechanical Engineering undergraduate specializing in mechatronics, advanced manufacturing, and IIoT instrumentation. Available for 2027 US Co-Ops." />
+    <meta name="title" content="About | Clement Toh">
+    <meta name="description" content="Clement Toh is an NUS Mechanical Engineering undergraduate and incoming Tesla Vehicle Manufacturing Engineering Intern, with experience in industrial automation, IIoT, hardware integration, and manufacturing data systems.">
 
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FE3DKEFDBS"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-FE3DKEFDBS');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-FE3DKEFDBS');
     </script>
-    
-    <!-- Open Graph (For LinkedIn, Slack, Facebook, iMessage) -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://clementtoh.com/about.html" />
-    <meta property="og:title" content="About | Clement Toh" />
-    <meta property="og:description" content="Mechanical Engineering undergraduate specializing in mechatronics, advanced manufacturing, and IIoT instrumentation. Available for 2027 US Co-Ops." />
-    <meta property="og:image" content="https://clementtoh.com/images/profilephoto.jpg" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://clementtoh.com/about.html">
+    <meta property="og:title" content="About | Clement Toh">
+    <meta property="og:description" content="NUS Mechanical Engineering undergraduate and incoming Tesla Vehicle Manufacturing Engineering Intern. Exploring industrial automation, manufacturing controls, and hardware-software integration.">
+    <meta property="og:image" content="https://clementtoh.com/images/profilephoto.jpg">
 
     <!-- Favicon & Styles -->
     <link rel="icon" type="image/png" href="images/CT32x32.png">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com">
+
+    </script>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
     </style>
 </head>
+
 <body id="top" class="bg-white text-neutral-900 antialiased selection:bg-black selection:text-white">
 
-    <!-- Navigation -->
+    <!-- NAVIGATION -->
     <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-neutral-200">
         <div class="max-w-6xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
-            <a href="index.html" class="font-semibold text-base md:text-lg tracking-tight text-neutral-900 shrink-0">Clement.Builds</a>
+
+            <a href="index.html" class="font-semibold text-base md:text-lg tracking-tight text-neutral-900 shrink-0">
+                Clement.Builds
+            </a>
+
             <div class="flex items-center gap-3 md:gap-6 text-xs md:text-sm font-medium text-neutral-500">
-                <a href="index.html#projects" class="hover:text-neutral-900 transition-colors">Projects</a>
-                <a href="about.html" class="hover:text-neutral-900 transition-colors">About</a>
-                <a href="assets/Clement_Toh_US_Hardware_Engineering_2027.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 md:gap-2 px-4 py-1.5 md:px-5 md:py-2 bg-[#222222] text-white rounded-full hover:bg-black transition-colors shrink-0">
-                    Resume
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 md:w-4 md:h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+
+                <a href="index.html#projects" class="hover:text-neutral-900 transition-colors">
+                    Projects
                 </a>
+
+                <a href="about.html" class="text-neutral-900 font-semibold">
+                    About
+                </a>
+
+                <a href="assets/Clement_Toh_Resume.pdf"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="inline-flex items-center gap-1.5 md:gap-2 px-4 py-1.5 md:px-5 md:py-2 bg-[#222222] text-white rounded-full hover:bg-black transition-colors shrink-0">
+
+                    Resume
+
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         class="w-3.5 h-3.5 md:w-4 md:h-4 shrink-0"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-4"/>
+                        <polyline points="7 10 12 15 17 10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+
+                </a>
+
             </div>
         </div>
     </nav>
 
-    <!-- Main Content -->
+
+    <!-- MAIN CONTENT -->
     <main class="max-w-4xl mx-auto px-6 pt-32 pb-24">
-        
-        <!-- Top Section: Centered Profile -->
+
+        <!-- PROFILE INTRODUCTION -->
         <div class="flex flex-col items-center text-center max-w-2xl mx-auto">
-            
+
+            <!-- Profile Photo -->
             <div class="w-48 h-48 md:w-56 md:h-56 mb-8 relative bg-white rounded-full border border-neutral-200 shadow-sm p-1">
+
                 <div class="w-full h-full rounded-full overflow-hidden relative">
-                    <img src="images/profilephoto.jpg" alt="Clement Toh" class="w-full h-full object-cover object-[center_5%] scale-[1.30]">
+
+                    <img src="images/profilephoto.jpg"
+                         alt="Clement Toh"
+                         class="w-full h-full object-cover object-[center_5%] scale-[1.30]">
+
                 </div>
             </div>
 
-            <h1 class="text-4xl md:text-5xl font-semibold mb-6 text-neutral-900">Clement Toh</h1>
-            
+
+            <h1 class="text-4xl md:text-5xl font-semibold mb-4 text-neutral-900">
+                Clement Toh
+            </h1>
+
+            <p class="text-sm font-medium text-neutral-500 mb-8">
+                Mechanical Engineering Undergraduate · Industrial Automation · Manufacturing Intelligence
+            </p>
+
+
+            <!-- BIOGRAPHY -->
             <div class="space-y-6 text-neutral-600 leading-relaxed">
+
                 <p>
-                    I am a <strong class="font-semibold text-neutral-900">Mechanical Engineering</strong> undergraduate at the <a href="https://cde.nus.edu.sg/me/undergraduate/beng-me/what-is-me/" target="_blank" rel="noopener noreferrer" class="text-blue-600 underline hover:text-blue-800 transition-colors"><strong>National University of Singapore (NUS)</strong></a>, specializing in the intersection of high-precision hardware and real-time industrial data.
+                    I'm a
+                    <strong class="font-semibold text-neutral-900">
+                        Mechanical Engineering undergraduate
+                    </strong>
+                    at the
+                    <a href="https://cde.nus.edu.sg/me/undergraduate/beng-me/what-is-me/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="text-blue-600 underline hover:text-blue-800 transition-colors">
+                        <strong>National University of Singapore (NUS)</strong>
+                    </a>,
+                    with a focus on connecting physical manufacturing systems
+                    with reliable, actionable engineering data.
                 </p>
+
+
                 <p>
-                    Currently, as a Mechatronics Engineering Intern at <a href="project-jd-union.html" class="text-blue-600 underline hover:text-blue-800 transition-colors"><strong>JD Union</strong></a>, I focus on physical hardware integration and engineering validation testing (EVT) for Class 4 laser systems. <strong class="font-semibold text-neutral-900">My work bridges mechanical chassis design with sensitive optomechatronic hardware, engineering heavy-duty test infrastructures and optimizing complex thermal and cable routing requirements.</strong>
+                    In January 2027, I'll be joining
+                    <strong class="font-semibold text-neutral-900">Tesla</strong>
+                    as a
+                    <strong class="font-semibold text-neutral-900">
+                        Vehicle Manufacturing Engineering Intern
+                    </strong>
+                    at Gigafactory Texas in Austin.
+                    I'm looking forward to gaining experience in
+                    manufacturing controls, SCADA systems, production monitoring,
+                    and commissioning within a high-volume automotive manufacturing environment.
                 </p>
+
+
                 <p>
-                    Previously, I built end-to-end telemetry pipelines for <a href="project-artc-integration.html" class="text-blue-600 underline hover:text-blue-800 transition-colors"><strong>A*STAR (ARTC)</strong></a> to monitor metal 3D printers using InfluxDB and Grafana. Whether I am designing precise mechanical assemblies or routing custom IIoT sensor instrumentation, <strong class="font-semibold text-neutral-900">my goal is to build systems that are mechanically robust and highly data-driven.</strong>
+                    Previously, at
+                    <a href="project-jd-union.html"
+                       class="text-blue-600 underline hover:text-blue-800 transition-colors">
+                        <strong>JD Union</strong>
+                    </a>,
+                    I worked on mechanical hardware integration and engineering
+                    validation for industrial laser systems.
+                    At
+                    <a href="project-artc-integration.html"
+                       class="text-blue-600 underline hover:text-blue-800 transition-colors">
+                        <strong>A*STAR ARTC</strong>
+                    </a>,
+                    I developed IIoT monitoring and data-acquisition solutions
+                    for metal additive manufacturing equipment using tools including
+                    C++, Python, InfluxDB, and Grafana.
                 </p>
+
+
+                <p>
+                    Across these experiences, my goal remains the same:
+                    <strong class="font-semibold text-neutral-900">
+                        build robust engineering systems that bridge hardware,
+                        automation, and data.
+                    </strong>
+                </p>
+
             </div>
 
+
+            <!-- CONTACT BUTTONS -->
             <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mt-10 w-full">
-                <a href="https://www.linkedin.com/in/clement26" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto flex justify-center items-center gap-1.5 px-6 py-3 bg-white text-neutral-900 border border-neutral-200 text-sm font-medium rounded-lg hover:bg-neutral-50 transition-colors shrink-0">
+
+                <a href="https://www.linkedin.com/in/clement26"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="w-full sm:w-auto flex justify-center items-center gap-1.5 px-6 py-3 bg-white text-neutral-900 border border-neutral-200 text-sm font-medium rounded-lg hover:bg-neutral-50 transition-colors">
+
                     LinkedIn
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 text-neutral-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         class="w-3.5 h-3.5 text-neutral-400"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+
+                        <line x1="7" y1="17" x2="17" y2="7"/>
+                        <polyline points="7 7 17 7 17 17"/>
+                    </svg>
+
                 </a>
-                <a href="assets/Clement_Toh_US_Hardware_Engineering_2027.pdf" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto flex justify-center items-center gap-2 px-6 py-3 bg-[#222222] text-white text-sm font-medium rounded-lg hover:bg-black transition-colors shadow-sm shrink-0">
+
+
+                <a href="assets/Clement_Toh_Resume.pdf"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="w-full sm:w-auto flex justify-center items-center gap-2 px-6 py-3 bg-[#222222] text-white text-sm font-medium rounded-lg hover:bg-black transition-colors shadow-sm">
+
                     Resume
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         class="w-4 h-4"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-4"/>
+                        <polyline points="7 10 12 15 17 10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+
                 </a>
+
             </div>
-            
+
+
+            <!-- EMAIL -->
             <div class="mt-4 flex flex-col items-center">
-                <button onclick="navigator.clipboard.writeText('clement.toh2604@gmail.com'); document.getElementById('copy-toast-bio').classList.remove('opacity-0'); setTimeout(() => document.getElementById('copy-toast-bio').classList.add('opacity-0'), 2000);" class="text-xs text-neutral-500 hover:text-neutral-800 transition-colors flex items-center gap-1.5 cursor-pointer">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-                    <span class="text-blue-600 font-medium">clement.toh2604@gmail.com</span> (Click to copy)
+
+                <button
+                    onclick="
+                        navigator.clipboard.writeText('clement.toh2604@gmail.com');
+                        document.getElementById('copy-toast-bio').classList.remove('opacity-0');
+                        setTimeout(() => document.getElementById('copy-toast-bio').classList.add('opacity-0'), 2000);
+                    "
+                    class="text-xs text-neutral-500 hover:text-neutral-800 transition-colors flex items-center gap-1.5 cursor-pointer">
+
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         class="w-3.5 h-3.5"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+
+                        <rect x="9" y="9" width="13" height="13" rx="2"/>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                    </svg>
+
+                    <span class="text-blue-600 font-medium">
+                        clement.toh2604@gmail.com
+                    </span>
+
+                    (Click to copy)
+
                 </button>
-                <span id="copy-toast-bio" class="text-xs text-emerald-600 font-medium mt-1 opacity-0 transition-opacity duration-300">Email copied to clipboard!</span>
+
+                <span id="copy-toast-bio"
+                      class="text-xs text-emerald-600 font-medium mt-1 opacity-0 transition-opacity duration-300">
+
+                    Email copied to clipboard!
+
+                </span>
+
             </div>
 
         </div>
 
-        <!-- Education Section -->
-        <div class="mt-12 pt-12 border-t border-neutral-200">
-            <h2 class="text-2xl font-semibold mb-8 text-neutral-900">Education</h2>
-            
+
+        <!-- EDUCATION -->
+        <section class="mt-12 pt-12 border-t border-neutral-200">
+
+            <h2 class="text-2xl font-semibold mb-8 text-neutral-900">
+                Education
+            </h2>
+
+
+            <!-- NUS -->
             <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4 py-4 border-b border-neutral-100">
+
                 <div class="max-w-2xl">
-                    <h4 class="text-base font-semibold text-neutral-900">National University of Singapore</h4>
-                    <p class="text-sm font-medium text-neutral-700 italic">Bachelor of Engineering (Mechanical Engineering) with Honours</p>
-                    <p class="text-sm text-neutral-600 mt-2">Cumulative GPA: <strong>4.19 / 5.00</strong></p>
-                    <p class="text-sm text-neutral-500 mt-2"><strong>Relevant Coursework:</strong> Industrial Additive Manufacturing, Structural Statics, Thermodynamics, Circuit Analysis.</p>
+
+                    <h3 class="text-base font-semibold text-neutral-900">
+                        National University of Singapore
+                    </h3>
+
+                    <p class="text-sm font-medium text-neutral-700 italic">
+                        Bachelor of Engineering (Mechanical Engineering) with Honours
+                    </p>
+
+                    <p class="text-sm text-neutral-600 mt-2">
+                        Cumulative GPA: <strong>4.19 / 5.00</strong>
+                    </p>
+
+                    <p class="text-sm text-neutral-500 mt-2">
+                        <strong>Relevant Coursework:</strong>
+                        Industrial Additive Manufacturing, Structural Statics,
+                        Thermodynamics, Circuit Analysis.
+                    </p>
+
                 </div>
+
                 <div class="text-sm text-neutral-400 shrink-0 md:text-right mt-1">
                     Expected May 2028
                 </div>
+
             </div>
 
-            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4 py-4 border-b border-neutral-100 last:border-0 last:pb-0">
+
+            <!-- SINGAPORE POLYTECHNIC -->
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4 py-4 border-b border-neutral-100">
+
                 <div class="max-w-2xl">
-                    <h4 class="text-base font-semibold text-neutral-900">Singapore Polytechnic</h4>
-                    <p class="text-sm font-medium text-neutral-700 italic">Diploma in Mechanical Engineering (with Merit)</p>
-                    <p class="text-sm text-neutral-600 mt-2">Final GPA: <strong>3.86 / 4.00</strong></p>
-                    
+
+                    <h3 class="text-base font-semibold text-neutral-900">
+                        Singapore Polytechnic
+                    </h3>
+
+                    <p class="text-sm font-medium text-neutral-700 italic">
+                        Diploma in Mechanical Engineering (with Merit)
+                    </p>
+
+                    <p class="text-sm text-neutral-600 mt-2">
+                        Final GPA: <strong>3.86 / 4.00</strong>
+                    </p>
+
+
                     <div class="mt-6 pl-4 border-l-2 border-neutral-200 space-y-5">
-                        
+
                         <div>
-                            <h5 class="text-sm font-semibold text-neutral-900">School of Mechanical & Aeronautical Engineering Book Prize</h5>
-                            <p class="text-sm text-neutral-600 mt-1 leading-relaxed">Top in Cohort for Module - Communicating For Personal And Team Effectiveness.</p>
+
+                            <h4 class="text-sm font-semibold text-neutral-900">
+                                School of Mechanical & Aeronautical Engineering Book Prize
+                            </h4>
+
+                            <p class="text-sm text-neutral-600 mt-1 leading-relaxed">
+                                Top in Cohort for Module - Communicating For Personal And Team Effectiveness.
+                            </p>
+
                             <div class="mt-2">
-                                <a href="assets/Clement_Toh_SP Book Prize.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
+
+                                <a href="assets/Clement_Toh_SP Book Prize.pdf"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   class="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
+
                                     Certificate PDF
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-                                </a>   
+
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                         class="w-3.5 h-3.5"
+                                         viewBox="0 0 24 24"
+                                         fill="none"
+                                         stroke="currentColor"
+                                         stroke-width="2"
+                                         stroke-linecap="round"
+                                         stroke-linejoin="round">
+
+                                        <line x1="7" y1="17" x2="17" y2="7"/>
+                                        <polyline points="7 7 17 7 17 17"/>
+                                    </svg>
+
+                                </a>
+
                             </div>
                         </div>
 
+
                         <div>
-                            <h5 class="text-sm font-semibold text-neutral-900">Certificate of Recognition: MAE Buddy Programme</h5>
-                            <p class="text-sm text-neutral-600 mt-1 leading-relaxed">Served as an academic peer mentor to support fellow Mechanical Engineering students.</p>
+
+                            <h4 class="text-sm font-semibold text-neutral-900">
+                                Certificate of Recognition: MAE Buddy Programme
+                            </h4>
+
+                            <p class="text-sm text-neutral-600 mt-1 leading-relaxed">
+                                Served as an academic peer mentor to support fellow
+                                Mechanical Engineering students.
+                            </p>
+
                             <div class="mt-2">
-                                <a href="assets/Clement_Toh_SP MAE Buddy Programme.pdf" rel="noopener noreferrer" target="_blank" class="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
+
+                                <a href="assets/Clement_Toh_SP MAE Buddy Programme.pdf"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   class="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
+
                                     Certificate PDF
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                         class="w-3.5 h-3.5"
+                                         viewBox="0 0 24 24"
+                                         fill="none"
+                                         stroke="currentColor"
+                                         stroke-width="2"
+                                         stroke-linecap="round"
+                                         stroke-linejoin="round">
+
+                                        <line x1="7" y1="17" x2="17" y2="7"/>
+                                        <polyline points="7 7 17 7 17 17"/>
+                                    </svg>
+
                                 </a>
+
                             </div>
                         </div>
-                        
+
                     </div>
+
                 </div>
+
                 <div class="text-sm text-neutral-400 shrink-0 md:text-right mt-1">
                     April 2023
                 </div>
+
             </div>
-        </div>
-        
-        <!-- Skills Section -->
-        <div class="mt-12 pt-12 border-t border-neutral-200">
-            <h2 class="text-2xl font-semibold mb-8 text-neutral-900">Technical Expertise</h2>
+
+        </section>
+
+
+        <!-- TECHNICAL EXPERTISE -->
+        <section class="mt-12 pt-12 border-t border-neutral-200">
+
+            <h2 class="text-2xl font-semibold mb-8 text-neutral-900">
+                Technical Expertise
+            </h2>
+
             <div class="grid md:grid-cols-2 gap-8 text-sm leading-relaxed">
-                <div>
-                    <h4 class="font-semibold text-neutral-900 mb-2">CAD, Modeling & Structural Design</h4>
-                    <p class="text-neutral-500">SolidWorks, Autodesk Inventor, Siemens NX, Fusion 360, AutoCAD, Creo, Complex Mechanical Assemblies, DFM, Sheet Metal Tolerances.</p>
-                </div>
-                <div>
-                    <h4 class="font-semibold text-neutral-900 mb-2">Software, Telemetry & Scripting</h4>
-                    <p class="text-neutral-500">Python (Data Pipelines, Test Automation), C++, MATLAB, InfluxDB, Grafana, Platform.io, GitLab, EPL Network Analysis.</p>
-                </div>
-                <div>
-                    <h4 class="font-semibold text-neutral-900 mb-2">Hardware & Motion Control</h4>
-                    <p class="text-neutral-500">Precision Kinematics, Arduino, PLCs, M5Stack FIRE IIoT, Optomechanics.</p>
-                </div>
-                <div>
-                    <h4 class="font-semibold text-neutral-900 mb-2">Validation & Characterization</h4>
-                    <p class="text-neutral-500">Engineering Validation Testing (EVT), Root Cause Analysis, NI DAQ (NI-9236), Oscilloscopes, Strain Gauges, Acoustic Emission Sensors.</p>
-                </div>
-                <div>
-                    <h4 class="font-semibold text-neutral-900 mb-2">Manufacturing & Prototyping</h4>
-                    <p class="text-neutral-500">Additive Manufacturing (EOS M290 LPBF & FDM), CNC Fabrication, Rapid Prototyping, Bill of Materials (BOM) Control, Optical QC.</p>
-                </div>
-                <div>
-                    <h4 class="font-semibold text-neutral-900 mb-2">Thermal & Laser Systems</h4>
-                    <p class="text-neutral-500">Class 4 Laser Subsystems, Thermodynamics, Heat Dissipation, Fluid & Sensor Routing, Electro-Mechanical Systems.</p>
-                </div>
-            </div>
-        </div>
 
-        <!-- Experience Section -->
-        <div class="mt-12 pt-12 border-t border-neutral-200">
-            <h2 class="text-2xl font-semibold mb-8 text-neutral-900">Professional Experience</h2>
-            
-            <!-- JD Union -->
+                <div>
+                    <h3 class="font-semibold text-neutral-900 mb-2">
+                        CAD, Modeling & Structural Design
+                    </h3>
+
+                    <p class="text-neutral-500">
+                        SolidWorks, Autodesk Inventor, Siemens NX, Fusion 360,
+                        AutoCAD, Creo, Complex Mechanical Assemblies,
+                        DFM, Sheet Metal Tolerances.
+                    </p>
+                </div>
+
+
+                <div>
+                    <h3 class="font-semibold text-neutral-900 mb-2">
+                        Software, Telemetry & Scripting
+                    </h3>
+
+                    <p class="text-neutral-500">
+                        Python (Data Pipelines, Test Automation), C++, MATLAB,
+                        InfluxDB, Grafana, Platform.io, GitLab,
+                        EPL Network Analysis.
+                    </p>
+                </div>
+
+
+                <div>
+                    <h3 class="font-semibold text-neutral-900 mb-2">
+                        Hardware & Motion Control
+                    </h3>
+
+                    <p class="text-neutral-500">
+                        Precision Kinematics, Arduino, PLCs,
+                        M5Stack FIRE IIoT, Optomechanics.
+                    </p>
+                </div>
+
+
+                <div>
+                    <h3 class="font-semibold text-neutral-900 mb-2">
+                        Validation & Characterization
+                    </h3>
+
+                    <p class="text-neutral-500">
+                        Engineering Validation Testing (EVT), Root Cause Analysis,
+                        NI DAQ (NI-9236), Oscilloscopes, Strain Gauges,
+                        Acoustic Emission Sensors.
+                    </p>
+                </div>
+
+
+                <div>
+                    <h3 class="font-semibold text-neutral-900 mb-2">
+                        Manufacturing & Prototyping
+                    </h3>
+
+                    <p class="text-neutral-500">
+                        Additive Manufacturing (EOS M290 LPBF & FDM),
+                        CNC Fabrication, Rapid Prototyping,
+                        Bill of Materials (BOM) Control, Optical QC.
+                    </p>
+                </div>
+
+
+                <div>
+                    <h3 class="font-semibold text-neutral-900 mb-2">
+                        Thermal & Laser Systems
+                    </h3>
+
+                    <p class="text-neutral-500">
+                        Class 4 Laser Subsystems, Thermodynamics,
+                        Heat Dissipation, Fluid & Sensor Routing,
+                        Electro-Mechanical Systems.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- PROFESSIONAL EXPERIENCE -->
+        <section class="mt-12 pt-12 border-t border-neutral-200">
+
+            <h2 class="text-2xl font-semibold mb-8 text-neutral-900">
+                Professional Experience
+            </h2>
+
+
+            <!-- TESLA -->
             <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4 py-4 border-b border-neutral-100">
+
                 <div class="max-w-2xl">
-                    <h4 class="text-base font-semibold text-neutral-900">JD Union Pte. Ltd.</h4>
-                    <p class="text-sm text-neutral-500 mt-1 mb-3 italic">Engineer Intern - Advanced Motion & Vision Control for Laser Micro-Processing</p>
+
+                    <div class="flex flex-wrap items-center gap-3">
+
+                        <h3 class="text-base font-semibold text-neutral-900">
+                            Tesla, Inc.
+                        </h3>
+
+                        <span class="text-xs font-semibold text-neutral-700 bg-neutral-100 border border-neutral-200 rounded-full px-3 py-1">
+                            Incoming
+                        </span>
+
+                    </div>
+
+                    <p class="text-sm text-neutral-500 mt-1 mb-3 italic">
+                        Vehicle Manufacturing Engineering Intern
+                        — Gigafactory Texas, Austin
+                    </p>
+
+                    <p class="text-sm text-neutral-600 leading-relaxed">
+                        Upcoming internship focused on manufacturing controls,
+                        SCADA systems, industrial data monitoring, and the
+                        development and commissioning of automation solutions
+                        for high-volume vehicle production.
+                    </p>
+
+                </div>
+
+                <div class="text-sm text-neutral-400 shrink-0 md:text-right mt-1">
+                    Jan 2027 – Jul 2027
+                </div>
+
+            </div>
+
+
+            <!-- JD UNION -->
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4 py-4 border-b border-neutral-100">
+
+                <div class="max-w-2xl">
+
+                    <h3 class="text-base font-semibold text-neutral-900">
+                        JD Union Pte. Ltd.
+                    </h3>
+
+                    <p class="text-sm text-neutral-500 mt-1 mb-3 italic">
+                        Engineer Intern - Advanced Motion & Vision Control
+                        for Laser Micro-Processing
+                    </p>
+
                     <ul class="text-sm text-neutral-600 leading-relaxed list-disc pl-4 space-y-2">
-                        <li>Executed rigorous quality control and engineering validation testing (EVT) on Class 4 laser (LUXINAR CO2); utilized microscopy to inspect Quartz Block Head (QBH) fiber optics to prevent window failure.</li>
-                        <li>Engineered and commissioned a heavy-duty mobile industrial test infrastructure (>250kg capacity) using SolidWorks, bridging the gap between mechanical chassis design and physical hardware integration.</li>
-                        <li>Integrated sensitive laser control components, including an IPG Ytterbium Fibre Laser and NANIO Air Power Supply, optimizing complex cable routing and thermal dissipation to support vision systems.</li>
+
+                        <li>
+                            Executed rigorous quality control and engineering validation
+                            testing (EVT) on Class 4 laser (LUXINAR CO2);
+                            utilized microscopy to inspect Quartz Block Head (QBH)
+                            fiber optics to prevent window failure.
+                        </li>
+
+                        <li>
+                            Engineered and commissioned a heavy-duty mobile
+                            industrial test infrastructure (>250kg capacity)
+                            using SolidWorks, bridging mechanical chassis
+                            design and physical hardware integration.
+                        </li>
+
+                        <li>
+                            Integrated sensitive laser control components,
+                            including an IPG Ytterbium Fibre Laser and
+                            NANIO Air Power Supply, optimizing cable routing
+                            and thermal dissipation to support vision systems.
+                        </li>
+
                     </ul>
+
+
                     <div class="mt-4">
-                        <a href="project-jd-union.html" class="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
-                            View Project Case Study
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+
+                        <a href="project-jd-union.html"
+                           class="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
+
+                            View Project Case Study →
+
                         </a>
+
                     </div>
+
                 </div>
+
                 <div class="text-sm text-neutral-400 shrink-0 md:text-right mt-1">
-                    Jun 2026 - Aug 2026
+                    Jun 2026 – Aug 2026
                 </div>
+
             </div>
 
-            <!-- Singapore Armed Forces -->
+
+            <!-- SINGAPORE ARMED FORCES -->
             <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4 py-4 border-b border-neutral-100">
+
                 <div class="max-w-2xl">
-                    <h4 class="text-base font-semibold text-neutral-900">Singapore Armed Forces (Armour Simulation Wing)</h4>
-                    <p class="text-sm text-neutral-500 mt-1 mb-3 italic">Systems Operator (National Service)</p>
+
+                    <h3 class="text-base font-semibold text-neutral-900">
+                        Singapore Armed Forces (Armour Simulation Wing)
+                    </h3>
+
+                    <p class="text-sm text-neutral-500 mt-1 mb-3 italic">
+                        Systems Operator (National Service)
+                    </p>
+
                     <ul class="text-sm text-neutral-600 leading-relaxed list-disc pl-4 space-y-2">
-                        <li>Operated and maintained advanced military simulation systems, including a synchronized network of cabins.</li>
-                        <li>Collaborated closely with defense engineering firms to troubleshoot hardware-software integrations and maintain system fidelity.</li>
-                        <li>Optimized system uptime and performance, directly contributing to a significant reduction in physical live-fire training costs and enhanced operational safety.</li>
+
+                        <li>
+                            Operated and maintained advanced military simulation
+                            systems, including a synchronized network of cabins.
+                        </li>
+
+                        <li>
+                            Collaborated with defense engineering firms to
+                            troubleshoot hardware-software integrations
+                            and maintain system fidelity.
+                        </li>
+
+                        <li>
+                            Optimized system uptime and performance,
+                            contributing to reduced physical live-fire training
+                            costs and improved operational safety.
+                        </li>
+
                     </ul>
-                    
+
+
                     <div class="flex flex-wrap gap-5 mt-4">
-                        <a href="assets/Clement_Toh_National Service Certificate of Service.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
-                            Certificate of Service
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+
+                        <a href="assets/Clement_Toh_National Service Certificate of Service.pdf"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
+
+                            Certificate of Service ↗
+
                         </a>
-                        <a href="assets/Clement_Toh_National Service Testimonial.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
-                            Commander's Testimonial
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+
+                        <a href="assets/Clement_Toh_National Service Testimonial.pdf"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
+
+                            Commander's Testimonial ↗
+
                         </a>
+
                     </div>
+
                 </div>
+
                 <div class="text-sm text-neutral-400 shrink-0 md:text-right mt-1">
-                    May 2023 - May 2025
+                    May 2023 – May 2025
                 </div>
+
             </div>
+
 
             <!-- A*STAR -->
-            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4 py-4 border-b border-neutral-100 last:border-0 last:pb-0">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4 py-4 border-b border-neutral-100">
+
                 <div class="max-w-2xl">
-                    <h4 class="text-base font-semibold text-neutral-900">Advanced Remanufacturing and Technology Centre (A*STAR)</h4>
-                    <p class="text-sm text-neutral-500 mt-1 mb-3 italic">Systems Integration & Development Engineering Intern</p>
+
+                    <h3 class="text-base font-semibold text-neutral-900">
+                        Advanced Remanufacturing and Technology Centre (A*STAR)
+                    </h3>
+
+                    <p class="text-sm text-neutral-500 mt-1 mb-3 italic">
+                        Systems Integration & Development Engineering Intern
+                    </p>
+
                     <ul class="text-sm text-neutral-600 leading-relaxed list-disc pl-4 space-y-2">
-                        <li>Programmed Python scripts to execute EPL network packet-sniffing by hardware-tapping the Industrial PC, validating electro-mechanical interactions via synchronized in-situ spectrometer with recoater blade.</li>
-                        <li>Engineered an embedded firmware architecture using an M5Stack edge-device (C++/Platform.io), querying an InfluxDB database via custom Flux scripts to automate real-time alerts.</li>
-                        <li>Designed and built hardware-software test setups, safely routing a 12-channel NI DAQ and acoustic emission sensors to characterize process parameters.</li>
+
+                        <li>
+                            Programmed Python scripts to execute EPL network
+                            packet-sniffing by hardware-tapping the Industrial PC,
+                            validating electro-mechanical interactions via
+                            synchronized in-situ spectrometer with recoater blade.
+                        </li>
+
+                        <li>
+                            Engineered an embedded firmware architecture using
+                            an M5Stack edge-device (C++/Platform.io),
+                            querying an InfluxDB database via custom Flux scripts
+                            to automate real-time alerts.
+                        </li>
+
+                        <li>
+                            Designed and built hardware-software test setups,
+                            safely routing a 12-channel NI DAQ and acoustic
+                            emission sensors to characterize process parameters.
+                        </li>
+
                     </ul>
+
+
                     <div class="mt-4">
-                        <a href="project-artc-integration.html" class="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
-                            View Project Case Study
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+
+                        <a href="project-artc-integration.html"
+                           class="text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
+
+                            View Project Case Study →
+
                         </a>
+
                     </div>
+
                 </div>
+
                 <div class="text-sm text-neutral-400 shrink-0 md:text-right mt-1">
-                    Sep 2022 - Apr 2023
+                    Sep 2022 – Apr 2023
                 </div>
-            </div>
-        </div>
 
-        <!-- Recommendations / Testimonials Section -->
-        <div class="mt-12 pt-12 border-t border-neutral-200">
-            <h2 class="text-2xl font-semibold mb-8 text-neutral-900">Recommendations</h2>
+            </div>
+
+        </section>
+
+
+        <!-- RECOMMENDATIONS -->
+        <section class="mt-12 pt-12 border-t border-neutral-200">
+
+            <h2 class="text-2xl font-semibold mb-8 text-neutral-900">
+                Recommendations
+            </h2>
+
             <div class="grid md:grid-cols-2 gap-6">
-                
+
+                <!-- A*STAR TESTIMONIAL -->
                 <div class="bg-neutral-100 p-6 rounded-2xl border border-neutral-200 flex flex-col justify-between">
+
                     <p class="text-sm text-neutral-600 leading-relaxed italic mb-6">
-                        "The <strong class="text-neutral-900">perseverance</strong> with which he tackles problems is commendable... Clement is a <strong class="text-neutral-900">good team player</strong> and works well with other staff and interns in achieving outcomes. Clement had <strong class="text-neutral-900">no issues picking up new topics</strong> with <strong class="text-neutral-900">IoT, industrial hardware, or C++/Python programming</strong> when tasked to do so... I am certain that Clement will be a great addition in any forward-looking team to contribute his <strong class="text-neutral-900">problem solving skills</strong>."
+                        "The <strong class="text-neutral-900">perseverance</strong>
+                        with which he tackles problems is commendable...
+                        Clement is a
+                        <strong class="text-neutral-900">good team player</strong>
+                        and works well with other staff and interns in achieving outcomes.
+                        Clement had
+                        <strong class="text-neutral-900">no issues picking up new topics</strong>
+                        with
+                        <strong class="text-neutral-900">
+                            IoT, industrial hardware, or C++/Python programming
+                        </strong>
+                        when tasked to do so...
+                        I am certain that Clement will be a great addition
+                        in any forward-looking team to contribute his
+                        <strong class="text-neutral-900">problem solving skills</strong>."
                     </p>
+
                     <div class="flex flex-col gap-3">
+
                         <div>
-                            <h4 class="text-sm font-semibold text-neutral-900">Dr. Zheng Jie TAN</h4>
-                            <p class="text-xs text-neutral-500 mt-0.5">Senior Scientist II, ARTC (A*STAR)</p>
+
+                            <h3 class="text-sm font-semibold text-neutral-900">
+                                Dr. Zheng Jie TAN
+                            </h3>
+
+                            <p class="text-xs text-neutral-500 mt-0.5">
+                                Senior Scientist II, ARTC (A*STAR)
+                            </p>
+
                         </div>
-                        <a href="assets/Clement_Toh_ARTC Testimonial.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
-                            View Full Letter
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+
+                        <a href="assets/Clement_Toh_ARTC Testimonial.pdf"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
+
+                            View Full Letter ↗
+
                         </a>
+
                     </div>
+
                 </div>
 
+
+                <!-- SP TESTIMONIAL -->
                 <div class="bg-neutral-100 p-6 rounded-2xl border border-neutral-200 flex flex-col justify-between">
+
                     <p class="text-sm text-neutral-600 leading-relaxed italic mb-6">
-                        "Clement was a competent student who demonstrated a <strong class="text-neutral-900">positive attitude</strong>... Overall, Toh En Rui Clement was a student who has showed interest in <strong class="text-neutral-900">improving himself</strong> and exercised <strong class="text-neutral-900">self-discipline</strong>. He set his personal and academic goals, and put in time and effort to achieve them. He faced setbacks with <strong class="text-neutral-900">firm resolve</strong>. Through it all, he exercised <strong class="text-neutral-900">integrity</strong> in his speech and actions."
+                        "Clement was a competent student who demonstrated a
+                        <strong class="text-neutral-900">positive attitude</strong>...
+                        Overall, Toh En Rui Clement was a student who has showed
+                        interest in
+                        <strong class="text-neutral-900">improving himself</strong>
+                        and exercised
+                        <strong class="text-neutral-900">self-discipline</strong>.
+                        He set his personal and academic goals,
+                        and put in time and effort to achieve them.
+                        He faced setbacks with
+                        <strong class="text-neutral-900">firm resolve</strong>.
+                        Through it all, he exercised
+                        <strong class="text-neutral-900">integrity</strong>
+                        in his speech and actions."
                     </p>
+
                     <div class="flex flex-col gap-3">
+
                         <div>
-                            <h4 class="text-sm font-semibold text-neutral-900">Dr. CHONG Chee Wei</h4>
-                            <p class="text-xs text-neutral-500 mt-0.5">Director, School of Mechanical & Aeronautical Engineering, Singapore Polytechnic</p>
+
+                            <h3 class="text-sm font-semibold text-neutral-900">
+                                Dr. CHONG Chee Wei
+                            </h3>
+
+                            <p class="text-xs text-neutral-500 mt-0.5">
+                                Director, School of Mechanical & Aeronautical Engineering,
+                                Singapore Polytechnic
+                            </p>
+
                         </div>
-                        <a href="assets/Clement_Toh_SP Testimonial.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
-                            View Full Letter
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+
+                        <a href="assets/Clement_Toh_SP Testimonial.pdf"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
+
+                            View Full Letter ↗
+
                         </a>
+
                     </div>
+
                 </div>
 
             </div>
-        </div>
-        
-        <!-- COMPRESSED: Leadership & Professional Development Section -->
-        <div class="mt-12 pt-12 border-t border-neutral-200">
-            <h2 class="text-2xl font-semibold mb-6 text-neutral-900">Leadership & Development</h2>
+
+        </section>
+
+
+        <!-- LEADERSHIP & DEVELOPMENT -->
+        <section class="mt-12 pt-12 border-t border-neutral-200">
+
+            <h2 class="text-2xl font-semibold mb-6 text-neutral-900">
+                Leadership & Development
+            </h2>
+
             <ul class="flex flex-col gap-3">
-                
-                <!-- HBSCS Mentorship -->
-                <li class="flex flex-col md:flex-row md:justify-between md:items-center gap-2 py-3 border-b border-neutral-100 last:border-0 last:pb-0">
+
+                <li class="flex flex-col md:flex-row md:justify-between md:items-center gap-2 py-3 border-b border-neutral-100">
+
                     <div class="text-sm">
-                        <strong class="text-neutral-900">Mentorship Program Participant</strong>
+
+                        <strong class="text-neutral-900">
+                            Mentorship Program Participant
+                        </strong>
+
                         <span class="text-neutral-400 mx-1.5 hidden md:inline">|</span>
-                        <span class="text-neutral-600 block md:inline mt-0.5 md:mt-0">Harvard Business School Club of Singapore</span>
+
+                        <span class="text-neutral-600 block md:inline mt-0.5 md:mt-0">
+                            Harvard Business School Club of Singapore
+                        </span>
+
                     </div>
+
                     <div class="flex items-center gap-4 text-xs shrink-0">
-                        <span class="text-neutral-400">Oct 2020 - May 2021</span>
-                        <a href="assets/Clement_Toh_Harvard Business School Certificate.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
-                            Certificate <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+
+                        <span class="text-neutral-400">
+                            Oct 2020 – May 2021
+                        </span>
+
+                        <a href="assets/Clement_Toh_Harvard Business School Certificate.pdf"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
+
+                            Certificate ↗
+
                         </a>
+
                     </div>
+
                 </li>
 
-                <!-- Zero To One -->
-                <li class="flex flex-col md:flex-row md:justify-between md:items-center gap-2 py-3 border-b border-neutral-100 last:border-0 last:pb-0">
+
+                <li class="flex flex-col md:flex-row md:justify-between md:items-center gap-2 py-3 border-b border-neutral-100">
+
                     <div class="text-sm">
-                        <strong class="text-neutral-900">Zero To One Entrepreneurship Program</strong>
+
+                        <strong class="text-neutral-900">
+                            Zero To One Entrepreneurship Program
+                        </strong>
+
                         <span class="text-neutral-400 mx-1.5 hidden md:inline">|</span>
-                        <span class="text-neutral-600 block md:inline mt-0.5 md:mt-0">NUS Business School & Meet Ventures</span>
+
+                        <span class="text-neutral-600 block md:inline mt-0.5 md:mt-0">
+                            NUS Business School & Meet Ventures
+                        </span>
+
                     </div>
+
                     <div class="flex items-center gap-4 text-xs shrink-0">
-                        <span class="text-neutral-400">Feb 2021 - Aug 2021</span>
-                        <a href="assets/Clement_Toh_The Zero To One Entrepreneurship Program (NUS Business School and Meet Ventures).pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
-                            Certificate <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+
+                        <span class="text-neutral-400">
+                            Feb 2021 – Aug 2021
+                        </span>
+
+                        <a href="assets/Clement_Toh_The Zero To One Entrepreneurship Program (NUS Business School and Meet Ventures).pdf"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
+
+                            Certificate ↗
+
                         </a>
+
                     </div>
+
                 </li>
 
-                <!-- Grassroots Volunteer -->
-                <li class="flex flex-col md:flex-row md:justify-between md:items-center gap-2 py-3 border-b border-neutral-100 last:border-0 last:pb-0">
+
+                <li class="flex flex-col md:flex-row md:justify-between md:items-center gap-2 py-3 border-b border-neutral-100">
+
                     <div class="text-sm">
-                        <strong class="text-neutral-900">Grassroots Volunteer</strong>
+
+                        <strong class="text-neutral-900">
+                            Grassroots Volunteer
+                        </strong>
+
                         <span class="text-neutral-400 mx-1.5 hidden md:inline">|</span>
-                        <span class="text-neutral-600 block md:inline mt-0.5 md:mt-0">Boon Lay Youth Network</span>
+
+                        <span class="text-neutral-600 block md:inline mt-0.5 md:mt-0">
+                            Boon Lay Youth Network
+                        </span>
+
                     </div>
+
                     <div class="flex items-center gap-4 text-xs shrink-0">
-                        <span class="text-neutral-400">Jan 2022 - Dec 2023</span>
-                        <a href="assets/Clement_Toh_Certificate of Appointment_Boon Lay Youth Network.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
-                            Certificate <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+
+                        <span class="text-neutral-400">
+                            Jan 2022 – Dec 2023
+                        </span>
+
+                        <a href="assets/Clement_Toh_Certificate of Appointment_Boon Lay Youth Network.pdf"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
+
+                            Certificate ↗
+
                         </a>
+
                     </div>
+
                 </li>
+
             </ul>
-        </div>
-        
-        <!-- Licenses & Certifications Section -->
-        <div class="mt-12 pt-12 border-t border-neutral-200">
-            <h2 class="text-2xl font-semibold mb-8 text-neutral-900">Licenses & Certifications</h2>
-            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4 py-4 border-b border-neutral-100 last:border-0 last:pb-0">
+
+        </section>
+
+
+        <!-- LICENSES & CERTIFICATIONS -->
+        <section class="mt-12 pt-12 border-t border-neutral-200">
+
+            <h2 class="text-2xl font-semibold mb-8 text-neutral-900">
+                Licenses & Certifications
+            </h2>
+
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4 py-4 border-b border-neutral-100">
+
                 <div class="max-w-2xl">
-                    <h4 class="text-base font-semibold text-neutral-900">Build Your Own Internet of Things</h4>
-                    <p class="text-sm text-neutral-500 mt-1">Singapore Polytechnic</p>
+
+                    <h3 class="text-base font-semibold text-neutral-900">
+                        Build Your Own Internet of Things
+                    </h3>
+
+                    <p class="text-sm text-neutral-500 mt-1">
+                        Singapore Polytechnic
+                    </p>
+
                     <div class="mt-3">
-                        <a href="assets/Clement_Toh_Build Your Own Internet of Things Certification.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
-                            Certificate PDF
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+
+                        <a href="assets/Clement_Toh_Build Your Own Internet of Things Certification.pdf"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
+
+                            Certificate PDF ↗
+
                         </a>
+
                     </div>
+
                 </div>
+
                 <div class="text-sm text-neutral-400 shrink-0 md:text-right mt-1">
                     June 2018
                 </div>
+
             </div>
-        </div>
+
+        </section>
+
     </main>
 
-    <!-- Footer -->
+
+    <!-- FOOTER -->
     <footer id="contact" class="border-t border-neutral-200 mt-12 bg-white">
+
         <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-neutral-500">
-            <p>© Clement TOH - 2026</p>
+
+            <p>
+                © Clement TOH - 2026
+            </p>
+
             <div class="flex items-center gap-6">
-                <a href="index.html#projects" class="hover:text-neutral-900 transition-colors">Projects</a>
-                <a href="about.html" class="hover:text-neutral-900 transition-colors">About</a>
-                <a href="assets/Clement_Toh_US_Hardware_Engineering_2027.pdf" target="_blank" rel="noopener noreferrer" class="hover:text-neutral-900 transition-colors">Resume</a>
+
+                <a href="index.html#projects" class="hover:text-neutral-900 transition-colors">
+                    Projects
+                </a>
+
+                <a href="about.html" class="hover:text-neutral-900 transition-colors">
+                    About
+                </a>
+
+                <a href="assets/Clement_Toh_Resume.pdf"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="hover:text-neutral-900 transition-colors">
+
+                    Resume
+
+                </a>
+
             </div>
+
         </div>
     </footer>
 
